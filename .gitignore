@@ -1,0 +1,15 @@
+upstream/
+node_modules/
+__pycache__/
+*.egg-info/
+dist/
+build/
+.venv/
+.env
+*.log
+.DS_Store
+.cache/
+coverage/
+.coverage
+CLAUDE.local.md
+.harness/

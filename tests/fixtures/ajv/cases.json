@@ -1,0 +1,1476 @@
+[
+ {
+  "name": "type-string",
+  "schema": {
+   "$id": "case",
+   "type": "string"
+  },
+  "data": 1
+ },
+ {
+  "name": "type-number",
+  "schema": {
+   "$id": "case",
+   "type": "number"
+  },
+  "data": "x"
+ },
+ {
+  "name": "type-number-rejects-bool",
+  "schema": {
+   "$id": "case",
+   "type": "number"
+  },
+  "data": true
+ },
+ {
+  "name": "type-integer-rejects-bool",
+  "schema": {
+   "$id": "case",
+   "type": "integer"
+  },
+  "data": true
+ },
+ {
+  "name": "type-integer-accepts-zero-fraction-float",
+  "schema": {
+   "$id": "case",
+   "type": "integer"
+  },
+  "data": 1.0
+ },
+ {
+  "name": "type-integer-rejects-fraction",
+  "schema": {
+   "$id": "case",
+   "type": "integer"
+  },
+  "data": 1.5
+ },
+ {
+  "name": "type-boolean",
+  "schema": {
+   "$id": "case",
+   "type": "boolean"
+  },
+  "data": 0
+ },
+ {
+  "name": "type-array",
+  "schema": {
+   "$id": "case",
+   "type": "array"
+  },
+  "data": {}
+ },
+ {
+  "name": "type-object",
+  "schema": {
+   "$id": "case",
+   "type": "object"
+  },
+  "data": []
+ },
+ {
+  "name": "type-null",
+  "schema": {
+   "$id": "case",
+   "type": "null"
+  },
+  "data": 0
+ },
+ {
+  "name": "type-union-list",
+  "schema": {
+   "$id": "case",
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "data": 1
+ },
+ {
+  "name": "type-union-list-passes",
+  "schema": {
+   "$id": "case",
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "data": null
+ },
+ {
+  "name": "enum-fails",
+  "schema": {
+   "$id": "case",
+   "enum": [
+    "a",
+    "b"
+   ]
+  },
+  "data": "c"
+ },
+ {
+  "name": "enum-number-int-float-equal",
+  "schema": {
+   "$id": "case",
+   "enum": [
+    1
+   ]
+  },
+  "data": 1.0
+ },
+ {
+  "name": "enum-bool-is-not-one",
+  "schema": {
+   "$id": "case",
+   "enum": [
+    1
+   ]
+  },
+  "data": true
+ },
+ {
+  "name": "const-fails",
+  "schema": {
+   "$id": "case",
+   "const": 5
+  },
+  "data": 4
+ },
+ {
+  "name": "minimum-fails",
+  "schema": {
+   "$id": "case",
+   "type": "number",
+   "minimum": 0
+  },
+  "data": -1
+ },
+ {
+  "name": "maximum-fails",
+  "schema": {
+   "$id": "case",
+   "type": "number",
+   "maximum": 90
+  },
+  "data": 91
+ },
+ {
+  "name": "minlength-fails",
+  "schema": {
+   "$id": "case",
+   "type": "string",
+   "minLength": 2
+  },
+  "data": "x"
+ },
+ {
+  "name": "maxlength-fails",
+  "schema": {
+   "$id": "case",
+   "type": "string",
+   "maxLength": 1
+  },
+  "data": "xy"
+ },
+ {
+  "name": "minitems-fails",
+  "schema": {
+   "$id": "case",
+   "type": "array",
+   "minItems": 2
+  },
+  "data": [
+   "a"
+  ]
+ },
+ {
+  "name": "maxitems-fails",
+  "schema": {
+   "$id": "case",
+   "type": "array",
+   "maxItems": 1
+  },
+  "data": [
+   "a",
+   "b"
+  ]
+ },
+ {
+  "name": "minproperties-fails",
+  "schema": {
+   "$id": "case",
+   "type": "object",
+   "minProperties": 1
+  },
+  "data": {}
+ },
+ {
+  "name": "pattern-currency-ok",
+  "schema": {
+   "$id": "case",
+   "type": "string",
+   "pattern": "^\\w{3}$"
+  },
+  "data": "USD"
+ },
+ {
+  "name": "pattern-currency-lowercase-ok",
+  "schema": {
+   "$id": "case",
+   "type": "string",
+   "pattern": "^\\w{3}$"
+  },
+  "data": "eur"
+ },
+ {
+  "name": "pattern-currency-symbol-fails",
+  "schema": {
+   "$id": "case",
+   "type": "string",
+   "pattern": "^\\w{3}$"
+  },
+  "data": "\u20acab"
+ },
+ {
+  "name": "pattern-currency-non-ascii-word-fails",
+  "schema": {
+   "$id": "case",
+   "type": "string",
+   "pattern": "^\\w{3}$"
+  },
+  "data": "\u65e5\u672c\u5186"
+ },
+ {
+  "name": "pattern-language-regex",
+  "schema": {
+   "$id": "case",
+   "type": "string",
+   "pattern": "^[a-z]{2,3}(-[A-Z]{2})?$"
+  },
+  "data": "EN"
+ },
+ {
+  "name": "pattern-trailing-newline",
+  "schema": {
+   "$id": "case",
+   "type": "string",
+   "pattern": "^[a-z]{2}$"
+  },
+  "data": "ab\n"
+ },
+ {
+  "name": "format-uri-fails",
+  "schema": {
+   "$id": "case",
+   "type": "string",
+   "format": "uri"
+  },
+  "data": "not a uri"
+ },
+ {
+  "name": "format-email-fails",
+  "schema": {
+   "$id": "case",
+   "type": "string",
+   "format": "email"
+  },
+  "data": "nope"
+ },
+ {
+  "name": "format-date-fails",
+  "schema": {
+   "$id": "case",
+   "type": "string",
+   "format": "date"
+  },
+  "data": "2026-13-01"
+ },
+ {
+  "name": "format-date-time-fails",
+  "schema": {
+   "$id": "case",
+   "type": "string",
+   "format": "date-time"
+  },
+  "data": "2026-08-17T25:00:00Z"
+ },
+ {
+  "name": "format-unknown-is-ignored",
+  "schema": {
+   "$id": "case",
+   "type": "string",
+   "format": "totally-unknown"
+  },
+  "data": "x"
+ },
+ {
+  "name": "required-two-missing",
+  "schema": {
+   "$id": "case",
+   "type": "object",
+   "required": [
+    "a",
+    "b"
+   ]
+  },
+  "data": {}
+ },
+ {
+  "name": "nested-properties-three-deep",
+  "schema": {
+   "$id": "case",
+   "type": "object",
+   "properties": {
+    "data": {
+     "type": "object",
+     "properties": {
+      "station": {
+       "type": "object",
+       "properties": {
+        "lat": {
+         "type": "number"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "data": {
+   "data": {
+    "station": {
+     "lat": "nope"
+    }
+   }
+  }
+ },
+ {
+  "name": "property-name-with-slash",
+  "schema": {
+   "$id": "case",
+   "type": "object",
+   "properties": {
+    "a/b": {
+     "type": "string"
+    }
+   }
+  },
+  "data": {
+   "a/b": 1
+  }
+ },
+ {
+  "name": "pattern-properties-plus-additional-false",
+  "schema": {
+   "$id": "case",
+   "type": "object",
+   "properties": {
+    "a": {
+     "type": "string"
+    }
+   },
+   "patternProperties": {
+    "^x_": {
+     "type": "number"
+    }
+   },
+   "additionalProperties": false
+  },
+  "data": {
+   "a": "s",
+   "x_1": 2,
+   "nope": 1
+  }
+ },
+ {
+  "name": "additional-properties-schema",
+  "schema": {
+   "$id": "case",
+   "type": "object",
+   "properties": {
+    "a": {
+     "type": "string"
+    }
+   },
+   "additionalProperties": {
+    "type": "number"
+   }
+  },
+  "data": {
+   "a": "s",
+   "b": "not a number"
+  }
+ },
+ {
+  "name": "tuple-items-with-additional-items-false",
+  "schema": {
+   "$id": "case",
+   "type": "array",
+   "items": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "number"
+    }
+   ],
+   "additionalItems": false
+  },
+  "data": [
+   "a",
+   1,
+   2
+  ]
+ },
+ {
+  "name": "tuple-items-type-error",
+  "schema": {
+   "$id": "case",
+   "type": "array",
+   "items": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "number"
+    }
+   ],
+   "additionalItems": false
+  },
+  "data": [
+   "a",
+   "b"
+  ]
+ },
+ {
+  "name": "items-single-schema",
+  "schema": {
+   "$id": "case",
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "data": [
+   "a",
+   1,
+   2
+  ]
+ },
+ {
+  "name": "contains-fails",
+  "schema": {
+   "$id": "case",
+   "type": "array",
+   "contains": {
+    "const": "x"
+   }
+  },
+  "data": [
+   "a",
+   "b"
+  ]
+ },
+ {
+  "name": "contains-passes",
+  "schema": {
+   "$id": "case",
+   "type": "array",
+   "contains": {
+    "const": "x"
+   }
+  },
+  "data": [
+   "a",
+   "x"
+  ]
+ },
+ {
+  "name": "dependencies-array-triggered",
+  "schema": {
+   "$id": "case",
+   "type": "object",
+   "dependencies": {
+    "a": [
+     "b"
+    ]
+   }
+  },
+  "data": {
+   "a": 1
+  }
+ },
+ {
+  "name": "dependencies-array-satisfied",
+  "schema": {
+   "$id": "case",
+   "type": "object",
+   "dependencies": {
+    "a": [
+     "b"
+    ]
+   }
+  },
+  "data": {
+   "a": 1,
+   "b": 2
+  }
+ },
+ {
+  "name": "dependencies-two-missing",
+  "schema": {
+   "$id": "case",
+   "type": "object",
+   "dependencies": {
+    "a": [
+     "b",
+     "c"
+    ]
+   }
+  },
+  "data": {
+   "a": 1
+  }
+ },
+ {
+  "name": "anyof-all-branches-fail",
+  "schema": {
+   "$id": "case",
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "number"
+    }
+   ]
+  },
+  "data": true
+ },
+ {
+  "name": "anyof-one-passes",
+  "schema": {
+   "$id": "case",
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "number"
+    }
+   ]
+  },
+  "data": "x"
+ },
+ {
+  "name": "oneof-zero-pass",
+  "schema": {
+   "$id": "case",
+   "oneOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "number"
+    }
+   ]
+  },
+  "data": true
+ },
+ {
+  "name": "oneof-two-pass",
+  "schema": {
+   "$id": "case",
+   "oneOf": [
+    {
+     "type": "integer"
+    },
+    {
+     "type": "number"
+    }
+   ]
+  },
+  "data": 1
+ },
+ {
+  "name": "allof-two-failures",
+  "schema": {
+   "$id": "case",
+   "allOf": [
+    {
+     "required": [
+      "a"
+     ]
+    },
+    {
+     "required": [
+      "b"
+     ]
+    }
+   ]
+  },
+  "data": {}
+ },
+ {
+  "name": "allof-nested-property-path",
+  "schema": {
+   "$id": "case",
+   "allOf": [
+    {
+     "properties": {
+      "a": {
+       "type": "string"
+      }
+     }
+    }
+   ]
+  },
+  "data": {
+   "a": 1
+  }
+ },
+ {
+  "name": "not-triggered",
+  "schema": {
+   "$id": "case",
+   "not": {
+    "type": "string"
+   }
+  },
+  "data": "x"
+ },
+ {
+  "name": "not-satisfied",
+  "schema": {
+   "$id": "case",
+   "not": {
+    "type": "string"
+   }
+  },
+  "data": 1
+ },
+ {
+  "name": "not-with-required",
+  "schema": {
+   "$id": "case",
+   "type": "object",
+   "not": {
+    "required": [
+     "a"
+    ]
+   }
+  },
+  "data": {
+   "a": 1
+  }
+ },
+ {
+  "name": "if-then-triggered",
+  "schema": {
+   "$id": "case",
+   "type": "object",
+   "if": {
+    "properties": {
+     "vehicle_type_id": {
+      "enum": [
+       "ebike1"
+      ]
+     }
+    },
+    "required": [
+     "vehicle_type_id"
+    ]
+   },
+   "then": {
+    "required": [
+     "current_range_meters"
+    ]
+   }
+  },
+  "data": {
+   "vehicle_type_id": "ebike1"
+  }
+ },
+ {
+  "name": "if-then-not-matching",
+  "schema": {
+   "$id": "case",
+   "type": "object",
+   "if": {
+    "properties": {
+     "vehicle_type_id": {
+      "enum": [
+       "ebike1"
+      ]
+     }
+    },
+    "required": [
+     "vehicle_type_id"
+    ]
+   },
+   "then": {
+    "required": [
+     "current_range_meters"
+    ]
+   }
+  },
+  "data": {
+   "vehicle_type_id": "human1"
+  }
+ },
+ {
+  "name": "if-else-branch",
+  "schema": {
+   "$id": "case",
+   "type": "object",
+   "if": {
+    "required": [
+     "a"
+    ]
+   },
+   "else": {
+    "required": [
+     "b"
+    ]
+   }
+  },
+  "data": {}
+ },
+ {
+  "name": "error-message-required-map",
+  "schema": {
+   "$id": "case",
+   "type": "object",
+   "errorMessage": {
+    "required": {
+     "vehicle_type_id": "'vehicle_type_id' is required for this vehicle type"
+    }
+   },
+   "required": [
+    "vehicle_type_id"
+   ]
+  },
+  "data": {}
+ },
+ {
+  "name": "error-message-partial-map",
+  "schema": {
+   "$id": "case",
+   "type": "object",
+   "errorMessage": {
+    "required": {
+     "a": "custom for a"
+    }
+   },
+   "required": [
+    "a",
+    "b"
+   ]
+  },
+  "data": {}
+ },
+ {
+  "name": "error-message-inside-items",
+  "schema": {
+   "$id": "case",
+   "type": "object",
+   "properties": {
+    "vehicles": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "errorMessage": {
+       "required": {
+        "vehicle_type_id": "'vehicle_type_id' is required for this vehicle type"
+       }
+      },
+      "required": [
+       "vehicle_type_id"
+      ]
+     }
+    }
+   }
+  },
+  "data": {
+   "vehicles": [
+    {
+     "bike_id": "b1"
+    }
+   ]
+  }
+ },
+ {
+  "name": "partial-patch-and-merge-v3-vehicle-status",
+  "schema": {
+   "$id": "https://github.com/MobilityData/gbfs/blob/v3.0/gbfs.md#vehicle_statusjson",
+   "type": "object",
+   "properties": {
+    "data": {
+     "type": "object",
+     "properties": {
+      "vehicles": {
+       "type": "array",
+       "items": {
+        "type": "object",
+        "properties": {
+         "vehicle_id": {
+          "type": "string"
+         },
+         "vehicle_type_id": {
+          "type": "string"
+         },
+         "current_range_meters": {
+          "type": "number"
+         }
+        },
+        "required": [
+         "vehicle_id"
+        ]
+       }
+      }
+     },
+     "required": [
+      "vehicles"
+     ]
+    }
+   },
+   "required": [
+    "data"
+   ]
+  },
+  "data": {
+   "data": {
+    "vehicles": [
+     {
+      "vehicle_id": "v1",
+      "vehicle_type_id": "scooter1"
+     }
+    ]
+   }
+  },
+  "addSchema": [
+   {
+    "$id": "required_vehicle_type_id.json#",
+    "$merge": {
+     "source": {
+      "$ref": "https://github.com/MobilityData/gbfs/blob/v3.0/gbfs.md#vehicle_statusjson"
+     },
+     "with": {
+      "properties": {
+       "data": {
+        "properties": {
+         "vehicles": {
+          "items": {
+           "errorMessage": {
+            "required": {
+             "vehicle_type_id": "'vehicle_type_id' is required for this vehicle type"
+            }
+           },
+           "if": {
+            "properties": {
+             "vehicle_type_id": {
+              "enum": [
+               "scooter1"
+              ]
+             }
+            },
+            "required": [
+             "vehicle_type_id"
+            ]
+           },
+           "then": {
+            "required": [
+             "current_range_meters"
+            ]
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    "$patch": {
+     "source": {
+      "$ref": "https://github.com/MobilityData/gbfs/blob/v3.0/gbfs.md#vehicle_statusjson"
+     },
+     "with": [
+      {
+       "op": "add",
+       "path": "/properties/data/properties/vehicles/items/required/0",
+       "value": "vehicle_type_id"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "name": "partial-patch-missing-vehicle-type-id",
+  "schema": {
+   "$id": "https://github.com/MobilityData/gbfs/blob/v3.0/gbfs.md#vehicle_statusjson",
+   "type": "object",
+   "properties": {
+    "data": {
+     "type": "object",
+     "properties": {
+      "vehicles": {
+       "type": "array",
+       "items": {
+        "type": "object",
+        "properties": {
+         "vehicle_id": {
+          "type": "string"
+         },
+         "vehicle_type_id": {
+          "type": "string"
+         },
+         "current_range_meters": {
+          "type": "number"
+         }
+        },
+        "required": [
+         "vehicle_id"
+        ]
+       }
+      }
+     },
+     "required": [
+      "vehicles"
+     ]
+    }
+   },
+   "required": [
+    "data"
+   ]
+  },
+  "data": {
+   "data": {
+    "vehicles": [
+     {
+      "vehicle_id": "v1"
+     }
+    ]
+   }
+  },
+  "addSchema": [
+   {
+    "$id": "required_vehicle_type_id.json#",
+    "$merge": {
+     "source": {
+      "$ref": "https://github.com/MobilityData/gbfs/blob/v3.0/gbfs.md#vehicle_statusjson"
+     },
+     "with": {
+      "properties": {
+       "data": {
+        "properties": {
+         "vehicles": {
+          "items": {
+           "errorMessage": {
+            "required": {
+             "vehicle_type_id": "'vehicle_type_id' is required for this vehicle type"
+            }
+           },
+           "if": {
+            "properties": {
+             "vehicle_type_id": {
+              "enum": [
+               "scooter1"
+              ]
+             }
+            },
+            "required": [
+             "vehicle_type_id"
+            ]
+           },
+           "then": {
+            "required": [
+             "current_range_meters"
+            ]
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    "$patch": {
+     "source": {
+      "$ref": "https://github.com/MobilityData/gbfs/blob/v3.0/gbfs.md#vehicle_statusjson"
+     },
+     "with": [
+      {
+       "op": "add",
+       "path": "/properties/data/properties/vehicles/items/required/0",
+       "value": "vehicle_type_id"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "name": "type-and-enum-both-fail",
+  "schema": {
+   "$id": "case",
+   "type": "string",
+   "enum": [
+    "bicycle",
+    "scooter_standing"
+   ]
+  },
+  "data": 7
+ },
+ {
+  "name": "type-and-const-both-fail",
+  "schema": {
+   "$id": "case",
+   "type": "string",
+   "const": "3.0"
+  },
+  "data": 7
+ },
+ {
+  "name": "type-and-minimum-both-fail",
+  "schema": {
+   "$id": "case",
+   "type": "number",
+   "minimum": 0
+  },
+  "data": "x"
+ },
+ {
+  "name": "type-and-required-both-fail",
+  "schema": {
+   "$id": "case",
+   "type": "object",
+   "required": [
+    "a"
+   ]
+  },
+  "data": []
+ },
+ {
+  "name": "type-and-pattern-both-fail",
+  "schema": {
+   "$id": "case",
+   "type": "string",
+   "pattern": "^[a-z]+$"
+  },
+  "data": 7
+ },
+ {
+  "name": "error-message-string-form",
+  "schema": {
+   "$id": "case",
+   "type": "object",
+   "required": [
+    "lat",
+    "lon"
+   ],
+   "errorMessage": "Both 'lat' and 'lon' are required."
+  },
+  "data": {}
+ },
+ {
+  "name": "error-message-string-form-passes",
+  "schema": {
+   "$id": "case",
+   "type": "object",
+   "required": [
+    "lat",
+    "lon"
+   ],
+   "errorMessage": "Both 'lat' and 'lon' are required."
+  },
+  "data": {
+   "lat": 1,
+   "lon": 2
+  }
+ },
+ {
+  "name": "error-message-string-inside-anyof",
+  "schema": {
+   "$id": "case",
+   "type": "object",
+   "anyOf": [
+    {
+     "required": [
+      "lat",
+      "lon"
+     ],
+     "errorMessage": "Both 'lat' and 'lon' are required."
+    },
+    {
+     "required": [
+      "station_id"
+     ],
+     "errorMessage": "'station_id' is required if 'lat' and 'lon' are not present."
+    }
+   ],
+   "required": [
+    "bike_id"
+   ]
+  },
+  "data": {
+   "bike_id": "b1"
+  }
+ },
+ {
+  "name": "error-message-string-covers-type-too",
+  "schema": {
+   "$id": "case",
+   "type": "object",
+   "errorMessage": "must be an object"
+  },
+  "data": 7
+ },
+ {
+  "name": "real-v2.3-free-bike-status-valid",
+  "schemaFile": "v2.3/free_bike_status.json",
+  "data": {
+   "last_updated": 1566224400,
+   "ttl": 0,
+   "version": "2.3",
+   "data": {
+    "bikes": [
+     {
+      "bike_id": "b1",
+      "is_reserved": false,
+      "is_disabled": false,
+      "lat": 37.7,
+      "lon": -122.4
+     }
+    ]
+   }
+  }
+ },
+ {
+  "name": "real-v2.3-free-bike-status-no-location",
+  "schemaFile": "v2.3/free_bike_status.json",
+  "data": {
+   "last_updated": 1566224400,
+   "ttl": 0,
+   "version": "2.3",
+   "data": {
+    "bikes": [
+     {
+      "bike_id": "b1",
+      "is_reserved": false,
+      "is_disabled": false
+     }
+    ]
+   }
+  }
+ },
+ {
+  "name": "real-v3.0-vehicle-status-valid",
+  "schemaFile": "v3.0/vehicle_status.json",
+  "data": {
+   "last_updated": "2019-08-19T10:20:00-04:00",
+   "ttl": 0,
+   "version": "3.0",
+   "data": {
+    "vehicles": [
+     {
+      "vehicle_id": "v1",
+      "is_reserved": false,
+      "is_disabled": false,
+      "lat": 37.7,
+      "lon": -122.4,
+      "vehicle_type_id": "scooter1"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "name": "real-v3.0-vehicle-types-bad-form-factor",
+  "schemaFile": "v3.0/vehicle_types.json",
+  "data": {
+   "last_updated": "2019-08-19T10:20:00-04:00",
+   "ttl": 0,
+   "version": "3.0",
+   "data": {
+    "vehicle_types": [
+     {
+      "vehicle_type_id": "s1",
+      "form_factor": 7,
+      "propulsion_type": "electric",
+      "max_range_meters": 1000,
+      "name": [
+       {
+        "text": "Scooter",
+        "language": "en"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ {
+  "name": "real-v2.3-system-information-valid",
+  "schemaFile": "v2.3/system_information.json",
+  "data": {
+   "last_updated": 1566224400,
+   "ttl": 0,
+   "version": "2.3",
+   "data": {
+    "system_id": "shared_bike",
+    "language": "en",
+    "name": "Shared Bike USA",
+    "timezone": "Etc/UTC"
+   }
+  }
+ },
+ {
+  "name": "real-v2.3-system-information-bad-language-missing-name",
+  "schemaFile": "v2.3/system_information.json",
+  "data": {
+   "last_updated": 1566224400,
+   "ttl": 0,
+   "version": "2.3",
+   "data": {
+    "system_id": "shared_bike",
+    "language": "ENGLISH",
+    "timezone": "Etc/UTC"
+   }
+  }
+ },
+ {
+  "name": "real-v3.0-system-information-wrong-name-shape",
+  "schemaFile": "v3.0/system_information.json",
+  "data": {
+   "last_updated": "2019-08-19T10:20:00-04:00",
+   "ttl": 0,
+   "version": "3.0",
+   "data": {
+    "system_id": "shared_bike",
+    "languages": [
+     "en"
+    ],
+    "name": "Shared Bike USA",
+    "timezone": "Etc/UTC",
+    "opening_hours": "Mo-Su 00:00-23:59",
+    "feed_contact_email": "a@b.co"
+   }
+  }
+ },
+ {
+  "name": "real-v3.1-RC3-system-pricing-plans-reservation",
+  "schemaFile": "v3.1-RC3/system_pricing_plans.json",
+  "data": {
+   "last_updated": "2019-08-19T10:20:00-04:00",
+   "ttl": 0,
+   "version": "3.1-RC3",
+   "data": {
+    "plans": [
+     {
+      "plan_id": "p1",
+      "name": [
+       {
+        "text": "Basic",
+        "language": "en"
+       }
+      ],
+      "currency": "USD",
+      "price": 0,
+      "is_taxable": false,
+      "description": [
+       {
+        "text": "Free",
+        "language": "en"
+       }
+      ],
+      "reservation_price_per_min": -1
+     }
+    ]
+   }
+  }
+ },
+ {
+  "name": "real-v2.3-station-status-missing-required",
+  "schemaFile": "v2.3/station_status.json",
+  "data": {
+   "last_updated": 1566224400,
+   "ttl": 0,
+   "version": "2.3",
+   "data": {
+    "stations": [
+     {
+      "station_id": "s1",
+      "num_bikes_available": 1
+     }
+    ]
+   }
+  }
+ },
+ {
+  "name": "real-v3.0-geofencing-zones-nested",
+  "schemaFile": "v3.0/geofencing_zones.json",
+  "data": {
+   "last_updated": "2019-08-19T10:20:00-04:00",
+   "ttl": 0,
+   "version": "3.0",
+   "data": {
+    "geofencing_zones": {
+     "type": "FeatureCollection",
+     "features": [
+      {
+       "type": "Feature",
+       "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+         [
+          [
+           [
+            -122.5,
+            37.7
+           ],
+           [
+            -122.4,
+            37.7
+           ],
+           [
+            -122.4,
+            37.8
+           ],
+           [
+            -122.5,
+            37.7
+           ]
+          ]
+         ]
+        ]
+       },
+       "properties": {
+        "rules": [
+         {
+          "ride_start_allowed": true
+         }
+        ]
+       }
+      }
+     ]
+    }
+   }
+  }
+ },
+ {
+  "name": "schemapath-pattern-properties-encoding",
+  "schema": {
+   "$id": "case",
+   "type": "object",
+   "patternProperties": {
+    "^[a-z]{2,3}(-[A-Z]{2})?$": {
+     "type": "object",
+     "required": [
+      "feeds"
+     ]
+    }
+   }
+  },
+  "data": {
+   "en": {}
+  }
+ },
+ {
+  "name": "schemapath-property-with-slash",
+  "schema": {
+   "$id": "case",
+   "type": "object",
+   "properties": {
+    "a/b": {
+     "type": "string"
+    }
+   }
+  },
+  "data": {
+   "a/b": 1
+  }
+ },
+ {
+  "name": "schemapath-property-with-tilde",
+  "schema": {
+   "$id": "case",
+   "type": "object",
+   "properties": {
+    "a~b": {
+     "type": "string"
+    }
+   }
+  },
+  "data": {
+   "a~b": 1
+  }
+ },
+ {
+  "name": "schemapath-property-with-space-and-dollar",
+  "schema": {
+   "$id": "case",
+   "type": "object",
+   "properties": {
+    "a b$": {
+     "type": "string"
+    }
+   }
+  },
+  "data": {
+   "a b$": 1
+  }
+ },
+ {
+  "name": "schemapath-pattern-properties-with-slash",
+  "schema": {
+   "$id": "case",
+   "type": "object",
+   "patternProperties": {
+    "a/b": {
+     "type": "string"
+    }
+   }
+  },
+  "data": {
+   "a/b": 1
+  }
+ },
+ {
+  "name": "schemapath-dependencies-schema-form-key",
+  "schema": {
+   "$id": "case",
+   "type": "object",
+   "dependencies": {
+    "a b": {
+     "required": [
+      "c"
+     ]
+    }
+   }
+  },
+  "data": {
+   "a b": 1
+  }
+ },
+ {
+  "name": "real-v2.3-gbfs-language-entry-not-object",
+  "schemaFile": "v2.3/gbfs.json",
+  "data": {
+   "last_updated": 1566224400,
+   "ttl": 0,
+   "version": "2.3",
+   "data": {
+    "en": {
+     "feeds": [
+      42
+     ]
+    }
+   }
+  }
+ }
+]

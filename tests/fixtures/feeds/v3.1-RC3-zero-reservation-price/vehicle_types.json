@@ -1,0 +1,16 @@
+{
+  "last_updated": "2022-01-01T00:00:00Z",
+  "ttl": 0,
+  "version": "3.1-RC3",
+  "data": {
+    "vehicle_types": [
+      {
+        "vehicle_type_id": "car1",
+        "form_factor": "car",
+        "propulsion_type": "electric",
+        "max_range_meters": 200000,
+        "default_pricing_plan_id": "plan1"
+      }
+    ]
+  }
+}

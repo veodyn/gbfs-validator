@@ -1,0 +1,20 @@
+{
+  "last_updated": "2022-01-01T00:00:00Z",
+  "ttl": 0,
+  "version": "3.1-RC3",
+  "data": {
+    "system_id": "sys1",
+    "languages": [
+      "en"
+    ],
+    "name": [
+      {
+        "text": "Example System",
+        "language": "en"
+      }
+    ],
+    "opening_hours": "Mo-Su 00:00-24:00",
+    "feed_contact_email": "ops@example.com",
+    "timezone": "Europe/Paris"
+  }
+}

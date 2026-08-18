@@ -1,0 +1,1 @@
+{"last_updated": 1566224400, "ttl": 0, "version": "2.3", "data": {"bikes": [{"bike_id": "b1", "vehicle_type_id": [], "is_reserved": false, "is_disabled": false, "lat": 37.7, "lon": -122.4}]}}

@@ -1,0 +1,6 @@
+{
+  "node": "v24.18.0",
+  "upstreamPin": "b734086ccdf93b5acd72bb349c6fda0c9f64fd39",
+  "schemaPin": "916327fe43ea79683f57c87bc54fdfc24797862f",
+  "yarnLockSha256": "d9e1fd98577a7f310983b574b98a4d59a26dea0c0d8b51fe607c9c2b622087e6"
+}

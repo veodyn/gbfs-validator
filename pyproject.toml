@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gbfs-validator"
+version = "0.1.0"
+description = "Pure-Python validator for GBFS feeds. No Node."
+readme = "README.md"
+requires-python = ">=3.11"
+# Empty on purpose, and enforced by tests/test_no_runtime_dependency.py. The
+# JSON Schema engine, the HTTP fetching and the report assembly are all
+# stdlib. Node appears only in tools/ as a dev-time oracle.
+dependencies = []
+license = "MIT"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "veodyn" }]
+keywords = ["gbfs", "micromobility", "bikeshare", "transit", "validator"]
+
+# No License classifier: `license` above is an SPDX expression, and setuptools
+# 77 rejects the pair.
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Scientific/Engineering :: GIS",
+  "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.urls]
+Repository = "https://github.com/veodyn/gbfs-validator"
+Issues = "https://github.com/veodyn/gbfs-validator/issues"
+
+# `main` returns the exit code rather than raising SystemExit, so a test can
+# read it as a value instead of catching it.
+[project.scripts]
+gbfs-validator = "gbfs_validator.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6", "coverage>=7", "pyright>=1.1"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# The vendored JSON Schemas are read at run time, so they must ship with the
+# wheel. `data/` is not a package: importlib.resources anchors on
+# `gbfs_validator` itself.
+[tool.setuptools.package-data]
+gbfs_validator = ["data/schemas/*/*.json", "data/PIN"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["tests"]

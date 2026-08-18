@@ -1,0 +1,849 @@
+{
+  "2.1/free_bike_status/required_vehicle_type_id": {
+    "$id": "required_vehicle_type_id.json#",
+    "$merge": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs/blob/v2.1/gbfs.md#free_bike_statusjson"
+      },
+      "with": {
+        "properties": {
+          "data": {
+            "properties": {
+              "bikes": {
+                "items": {
+                  "errorMessage": {
+                    "required": {
+                      "vehicle_type_id": "'vehicle_type_id' is required for this vehicle type"
+                    }
+                  },
+                  "if": {
+                    "properties": {
+                      "vehicle_type_id": {
+                        "enum": [
+                          "ebike1"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "vehicle_type_id"
+                    ]
+                  },
+                  "then": {
+                    "required": [
+                      "current_range_meters"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "$patch": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs/blob/v2.1/gbfs.md#free_bike_statusjson"
+      },
+      "with": [
+        {
+          "op": "add",
+          "path": "/properties/data/properties/bikes/items/required/0",
+          "value": "vehicle_type_id"
+        }
+      ]
+    }
+  },
+  "2.1/station_status/required_vehicle_types_available": {
+    "$id": "required_vehicle_types_available.json#",
+    "$merge": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs/blob/v2.1/gbfs.md#station_statusjson"
+      },
+      "with": {
+        "properties": {
+          "data": {
+            "properties": {
+              "stations": {
+                "items": {
+                  "properties": {
+                    "vehicle_types_available": {
+                      "items": {
+                        "properties": {
+                          "vehicle_type_id": {
+                            "enum": [
+                              "ebike1"
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "$patch": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs/blob/v2.1/gbfs.md#station_statusjson"
+      },
+      "with": [
+        {
+          "op": "add",
+          "path": "/properties/data/properties/stations/items/required/0",
+          "value": "vehicle_types_available"
+        }
+      ]
+    }
+  },
+  "2.1/system_information/required_store_uri": {
+    "$id": "required_ios_store_uri.json#",
+    "$patch": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs/blob/v2.1/gbfs.md#system_informationjson"
+      },
+      "with": [
+        {
+          "op": "add",
+          "path": "/properties/data/required/0",
+          "value": "rental_apps"
+        }
+      ]
+    },
+    "$merge": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs/blob/v2.1/gbfs.md#system_informationjson"
+      },
+      "with": {
+        "properties": {
+          "data": {
+            "properties": {
+              "rental_apps": {
+                "required": [
+                  "ios"
+                ],
+                "properties": {
+                  "ios": {
+                    "required": [
+                      "store_uri"
+                    ]
+                  },
+                  "android": {
+                    "required": []
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "2.2/free_bike_status/required_vehicle_type_id": {
+    "$id": "required_vehicle_type_id.json#",
+    "$merge": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs/blob/v2.2/gbfs.md#free_bike_statusjson"
+      },
+      "with": {
+        "properties": {
+          "data": {
+            "properties": {
+              "bikes": {
+                "items": {
+                  "errorMessage": {
+                    "required": {
+                      "vehicle_type_id": "'vehicle_type_id' is required for this vehicle type"
+                    }
+                  },
+                  "if": {
+                    "properties": {
+                      "vehicle_type_id": {
+                        "enum": [
+                          "ebike1"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "vehicle_type_id"
+                    ]
+                  },
+                  "then": {
+                    "required": [
+                      "current_range_meters"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "$patch": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs/blob/v2.2/gbfs.md#free_bike_statusjson"
+      },
+      "with": [
+        {
+          "op": "add",
+          "path": "/properties/data/properties/bikes/items/required/0",
+          "value": "vehicle_type_id"
+        }
+      ]
+    }
+  },
+  "2.2/station_status/required_vehicle_types_available": {
+    "$id": "required_vehicle_types_available.json#",
+    "$merge": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs/blob/v2.2/gbfs.md#station_statusjson"
+      },
+      "with": {
+        "properties": {
+          "data": {
+            "properties": {
+              "stations": {
+                "items": {
+                  "properties": {
+                    "vehicle_types_available": {
+                      "items": {
+                        "properties": {
+                          "vehicle_type_id": {
+                            "enum": [
+                              "ebike1"
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "$patch": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs/blob/v2.2/gbfs.md#station_statusjson"
+      },
+      "with": [
+        {
+          "op": "add",
+          "path": "/properties/data/properties/stations/items/required/0",
+          "value": "vehicle_types_available"
+        }
+      ]
+    }
+  },
+  "2.2/system_information/required_store_uri": {
+    "$id": "required_ios_store_uri.json#",
+    "$patch": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs/blob/v2.2/gbfs.md#system_informationjson"
+      },
+      "with": [
+        {
+          "op": "add",
+          "path": "/properties/data/required/0",
+          "value": "rental_apps"
+        }
+      ]
+    },
+    "$merge": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs/blob/v2.2/gbfs.md#system_informationjson"
+      },
+      "with": {
+        "properties": {
+          "data": {
+            "properties": {
+              "rental_apps": {
+                "required": [
+                  "ios"
+                ],
+                "properties": {
+                  "ios": {
+                    "required": [
+                      "store_uri"
+                    ]
+                  },
+                  "android": {
+                    "required": []
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "2.3/free_bike_status/required_vehicle_type_id": {
+    "$id": "required_vehicle_type_id.json#",
+    "$merge": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#free_bike_statusjson"
+      },
+      "with": {
+        "properties": {
+          "data": {
+            "properties": {
+              "bikes": {
+                "items": {
+                  "errorMessage": {
+                    "required": {
+                      "vehicle_type_id": "'vehicle_type_id' is required for this vehicle type"
+                    }
+                  },
+                  "if": {
+                    "properties": {
+                      "vehicle_type_id": {
+                        "enum": [
+                          "ebike1"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "vehicle_type_id"
+                    ]
+                  },
+                  "then": {
+                    "required": [
+                      "current_range_meters"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "$patch": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#free_bike_statusjson"
+      },
+      "with": [
+        {
+          "op": "add",
+          "path": "/properties/data/properties/bikes/items/required/0",
+          "value": "vehicle_type_id"
+        }
+      ]
+    }
+  },
+  "2.3/station_status/required_vehicle_types_available": {
+    "$id": "required_vehicle_types_available.json#",
+    "$merge": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_statusjson"
+      },
+      "with": {
+        "properties": {
+          "data": {
+            "properties": {
+              "stations": {
+                "items": {
+                  "properties": {
+                    "vehicle_types_available": {
+                      "items": {
+                        "properties": {
+                          "vehicle_type_id": {
+                            "enum": [
+                              "ebike1"
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "$patch": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_statusjson"
+      },
+      "with": [
+        {
+          "op": "add",
+          "path": "/properties/data/properties/stations/items/required/0",
+          "value": "vehicle_types_available"
+        }
+      ]
+    }
+  },
+  "2.3/system_information/required_store_uri": {
+    "$id": "required_ios_store_uri.json#",
+    "$patch": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#system_informationjson"
+      },
+      "with": [
+        {
+          "op": "add",
+          "path": "/properties/data/required/0",
+          "value": "rental_apps"
+        }
+      ]
+    },
+    "$merge": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#system_informationjson"
+      },
+      "with": {
+        "properties": {
+          "data": {
+            "properties": {
+              "rental_apps": {
+                "required": [
+                  "ios"
+                ],
+                "properties": {
+                  "ios": {
+                    "required": [
+                      "store_uri"
+                    ]
+                  },
+                  "android": {
+                    "required": []
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "2.3/vehicle_types/pricing_plan_id": {
+    "$id": "pricing_plan_id.json#",
+    "$merge": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#vehicle_typesjson"
+      },
+      "with": {
+        "properties": {
+          "data": {
+            "properties": {
+              "vehicle_types": {
+                "items": {
+                  "properties": {
+                    "default_pricing_plan_id": {
+                      "enum": [
+                        "p1",
+                        "p2"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "3.0/station_status/required_vehicle_types_available": {
+    "$id": "required_vehicle_types_available.json#",
+    "$merge": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs/blob/v3.0/gbfs.md#station_statusjson"
+      },
+      "with": {
+        "properties": {
+          "data": {
+            "properties": {
+              "stations": {
+                "items": {
+                  "properties": {
+                    "vehicle_types_available": {
+                      "items": {
+                        "properties": {
+                          "vehicle_type_id": {
+                            "enum": [
+                              "ebike1"
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "$patch": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs/blob/v3.0/gbfs.md#station_statusjson"
+      },
+      "with": [
+        {
+          "op": "add",
+          "path": "/properties/data/properties/stations/items/required/0",
+          "value": "vehicle_types_available"
+        }
+      ]
+    }
+  },
+  "3.0/system_information/required_store_uri": {
+    "$id": "required_ios_store_uri.json#",
+    "$patch": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs/blob/v3.0/gbfs.md#system_informationjson"
+      },
+      "with": [
+        {
+          "op": "add",
+          "path": "/properties/data/required/0",
+          "value": "rental_apps"
+        }
+      ]
+    },
+    "$merge": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs/blob/v3.0/gbfs.md#system_informationjson"
+      },
+      "with": {
+        "properties": {
+          "data": {
+            "properties": {
+              "rental_apps": {
+                "required": [
+                  "ios"
+                ],
+                "properties": {
+                  "ios": {
+                    "required": [
+                      "store_uri"
+                    ]
+                  },
+                  "android": {
+                    "required": []
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "3.0/vehicle_status/required_vehicle_type_id": {
+    "$id": "required_vehicle_type_id.json#",
+    "$merge": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs/blob/v3.0/gbfs.md#vehicle_statusjson"
+      },
+      "with": {
+        "properties": {
+          "data": {
+            "properties": {
+              "vehicles": {
+                "items": {
+                  "errorMessage": {
+                    "required": {
+                      "vehicle_type_id": "'vehicle_type_id' is required for this vehicle type"
+                    }
+                  },
+                  "if": {
+                    "properties": {
+                      "vehicle_type_id": {
+                        "enum": [
+                          "ebike1"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "vehicle_type_id"
+                    ]
+                  },
+                  "then": {
+                    "required": [
+                      "current_range_meters"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "$patch": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs/blob/v3.0/gbfs.md#vehicle_statusjson"
+      },
+      "with": [
+        {
+          "op": "add",
+          "path": "/properties/data/properties/vehicles/items/required/0",
+          "value": "vehicle_type_id"
+        }
+      ]
+    }
+  },
+  "3.0/vehicle_types/pricing_plan_id": {
+    "$id": "pricing_plan_id.json#",
+    "$merge": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs/blob/v3.0/gbfs.md#vehicle_typesjson"
+      },
+      "with": {
+        "properties": {
+          "data": {
+            "properties": {
+              "vehicle_types": {
+                "items": {
+                  "properties": {
+                    "default_pricing_plan_id": {
+                      "enum": [
+                        "p1",
+                        "p2"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "3.1-RC3/station_status/required_vehicle_types_available": {
+    "$id": "required_vehicle_types_available.json#",
+    "$merge": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs-json-schema/blob/master/v3.1-RC3/station_status.json"
+      },
+      "with": {
+        "properties": {
+          "data": {
+            "properties": {
+              "stations": {
+                "items": {
+                  "properties": {
+                    "vehicle_types_available": {
+                      "items": {
+                        "properties": {
+                          "vehicle_type_id": {
+                            "enum": [
+                              "ebike1"
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "$patch": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs-json-schema/blob/master/v3.1-RC3/station_status.json"
+      },
+      "with": [
+        {
+          "op": "add",
+          "path": "/properties/data/properties/stations/items/required/0",
+          "value": "vehicle_types_available"
+        }
+      ]
+    }
+  },
+  "3.1-RC3/system_information/required_store_uri": {
+    "$id": "required_ios_store_uri.json#",
+    "$patch": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs-json-schema/blob/master/v3.1-RC3/system_information.json"
+      },
+      "with": [
+        {
+          "op": "add",
+          "path": "/properties/data/required/0",
+          "value": "rental_apps"
+        }
+      ]
+    },
+    "$merge": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs-json-schema/blob/master/v3.1-RC3/system_information.json"
+      },
+      "with": {
+        "properties": {
+          "data": {
+            "properties": {
+              "rental_apps": {
+                "required": [
+                  "ios"
+                ],
+                "properties": {
+                  "ios": {
+                    "required": [
+                      "store_uri"
+                    ]
+                  },
+                  "android": {
+                    "required": []
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "3.1-RC3/vehicle_status/required_vehicle_type_id": {
+    "$id": "required_vehicle_type_id.json#",
+    "$merge": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs-json-schema/blob/master/v3.1-RC3/vehicle_status.json"
+      },
+      "with": {
+        "properties": {
+          "data": {
+            "properties": {
+              "vehicles": {
+                "items": {
+                  "errorMessage": {
+                    "required": {
+                      "vehicle_type_id": "'vehicle_type_id' is required for this vehicle type"
+                    }
+                  },
+                  "if": {
+                    "properties": {
+                      "vehicle_type_id": {
+                        "enum": [
+                          "ebike1"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "vehicle_type_id"
+                    ]
+                  },
+                  "then": {
+                    "required": [
+                      "current_range_meters"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "$patch": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs-json-schema/blob/master/v3.1-RC3/vehicle_status.json"
+      },
+      "with": [
+        {
+          "op": "add",
+          "path": "/properties/data/properties/vehicles/items/required/0",
+          "value": "vehicle_type_id"
+        }
+      ]
+    }
+  },
+  "3.1-RC3/vehicle_types/default_reserve_time_require": {
+    "$id": "pricing_plan_id.json#",
+    "$merge": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs-json-schema/blob/master/v3.1-RC3/vehicle_types.json"
+      },
+      "with": {
+        "properties": {
+          "data": {
+            "properties": {
+              "vehicle_types": {
+                "items": {
+                  "allOf": [
+                    {
+                      "if": {
+                        "anyOf": [
+                          {
+                            "properties": {
+                              "default_pricing_plan_id": {
+                                "enum": [
+                                  "p1"
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "properties": {
+                              "pricing_plan_ids": {
+                                "contains": {
+                                  "enum": [
+                                    "p1"
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "then": {
+                        "required": [
+                          "default_reserve_time"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "3.1-RC3/vehicle_types/pricing_plan_id": {
+    "$id": "pricing_plan_id.json#",
+    "$merge": {
+      "source": {
+        "$ref": "https://github.com/MobilityData/gbfs-json-schema/blob/master/v3.1-RC3/vehicle_types.json"
+      },
+      "with": {
+        "properties": {
+          "data": {
+            "properties": {
+              "vehicle_types": {
+                "items": {
+                  "properties": {
+                    "default_pricing_plan_id": {
+                      "enum": [
+                        "p1",
+                        "p2"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1222 @@
+{
+  "type-string": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/type",
+      "keyword": "type",
+      "params": {
+        "type": "string"
+      },
+      "message": "must be string"
+    }
+  ],
+  "type-number": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/type",
+      "keyword": "type",
+      "params": {
+        "type": "number"
+      },
+      "message": "must be number"
+    }
+  ],
+  "type-number-rejects-bool": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/type",
+      "keyword": "type",
+      "params": {
+        "type": "number"
+      },
+      "message": "must be number"
+    }
+  ],
+  "type-integer-rejects-bool": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/type",
+      "keyword": "type",
+      "params": {
+        "type": "integer"
+      },
+      "message": "must be integer"
+    }
+  ],
+  "type-integer-accepts-zero-fraction-float": false,
+  "type-integer-rejects-fraction": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/type",
+      "keyword": "type",
+      "params": {
+        "type": "integer"
+      },
+      "message": "must be integer"
+    }
+  ],
+  "type-boolean": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/type",
+      "keyword": "type",
+      "params": {
+        "type": "boolean"
+      },
+      "message": "must be boolean"
+    }
+  ],
+  "type-array": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/type",
+      "keyword": "type",
+      "params": {
+        "type": "array"
+      },
+      "message": "must be array"
+    }
+  ],
+  "type-object": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/type",
+      "keyword": "type",
+      "params": {
+        "type": "object"
+      },
+      "message": "must be object"
+    }
+  ],
+  "type-null": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/type",
+      "keyword": "type",
+      "params": {
+        "type": "null"
+      },
+      "message": "must be null"
+    }
+  ],
+  "type-union-list": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/type",
+      "keyword": "type",
+      "params": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "message": "must be string,null"
+    }
+  ],
+  "type-union-list-passes": false,
+  "enum-fails": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/enum",
+      "keyword": "enum",
+      "params": {
+        "allowedValues": [
+          "a",
+          "b"
+        ]
+      },
+      "message": "must be equal to one of the allowed values"
+    }
+  ],
+  "enum-number-int-float-equal": false,
+  "enum-bool-is-not-one": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/enum",
+      "keyword": "enum",
+      "params": {
+        "allowedValues": [
+          1
+        ]
+      },
+      "message": "must be equal to one of the allowed values"
+    }
+  ],
+  "const-fails": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/const",
+      "keyword": "const",
+      "params": {
+        "allowedValue": 5
+      },
+      "message": "must be equal to constant"
+    }
+  ],
+  "minimum-fails": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/minimum",
+      "keyword": "minimum",
+      "params": {
+        "comparison": ">=",
+        "limit": 0
+      },
+      "message": "must be >= 0"
+    }
+  ],
+  "maximum-fails": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/maximum",
+      "keyword": "maximum",
+      "params": {
+        "comparison": "<=",
+        "limit": 90
+      },
+      "message": "must be <= 90"
+    }
+  ],
+  "minlength-fails": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/minLength",
+      "keyword": "minLength",
+      "params": {
+        "limit": 2
+      },
+      "message": "must NOT have fewer than 2 characters"
+    }
+  ],
+  "maxlength-fails": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/maxLength",
+      "keyword": "maxLength",
+      "params": {
+        "limit": 1
+      },
+      "message": "must NOT have more than 1 characters"
+    }
+  ],
+  "minitems-fails": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/minItems",
+      "keyword": "minItems",
+      "params": {
+        "limit": 2
+      },
+      "message": "must NOT have fewer than 2 items"
+    }
+  ],
+  "maxitems-fails": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/maxItems",
+      "keyword": "maxItems",
+      "params": {
+        "limit": 1
+      },
+      "message": "must NOT have more than 1 items"
+    }
+  ],
+  "minproperties-fails": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/minProperties",
+      "keyword": "minProperties",
+      "params": {
+        "limit": 1
+      },
+      "message": "must NOT have fewer than 1 properties"
+    }
+  ],
+  "pattern-currency-ok": false,
+  "pattern-currency-lowercase-ok": false,
+  "pattern-currency-symbol-fails": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/pattern",
+      "keyword": "pattern",
+      "params": {
+        "pattern": "^\\w{3}$"
+      },
+      "message": "must match pattern \"^\\w{3}$\""
+    }
+  ],
+  "pattern-currency-non-ascii-word-fails": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/pattern",
+      "keyword": "pattern",
+      "params": {
+        "pattern": "^\\w{3}$"
+      },
+      "message": "must match pattern \"^\\w{3}$\""
+    }
+  ],
+  "pattern-language-regex": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/pattern",
+      "keyword": "pattern",
+      "params": {
+        "pattern": "^[a-z]{2,3}(-[A-Z]{2})?$"
+      },
+      "message": "must match pattern \"^[a-z]{2,3}(-[A-Z]{2})?$\""
+    }
+  ],
+  "pattern-trailing-newline": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/pattern",
+      "keyword": "pattern",
+      "params": {
+        "pattern": "^[a-z]{2}$"
+      },
+      "message": "must match pattern \"^[a-z]{2}$\""
+    }
+  ],
+  "format-uri-fails": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/format",
+      "keyword": "format",
+      "params": {
+        "format": "uri"
+      },
+      "message": "must match format \"uri\""
+    }
+  ],
+  "format-email-fails": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/format",
+      "keyword": "format",
+      "params": {
+        "format": "email"
+      },
+      "message": "must match format \"email\""
+    }
+  ],
+  "format-date-fails": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/format",
+      "keyword": "format",
+      "params": {
+        "format": "date"
+      },
+      "message": "must match format \"date\""
+    }
+  ],
+  "format-date-time-fails": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/format",
+      "keyword": "format",
+      "params": {
+        "format": "date-time"
+      },
+      "message": "must match format \"date-time\""
+    }
+  ],
+  "format-unknown-is-ignored": false,
+  "required-two-missing": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/required",
+      "keyword": "required",
+      "params": {
+        "missingProperty": "a"
+      },
+      "message": "must have required property 'a'"
+    },
+    {
+      "instancePath": "",
+      "schemaPath": "#/required",
+      "keyword": "required",
+      "params": {
+        "missingProperty": "b"
+      },
+      "message": "must have required property 'b'"
+    }
+  ],
+  "nested-properties-three-deep": [
+    {
+      "instancePath": "/data/station/lat",
+      "schemaPath": "#/properties/data/properties/station/properties/lat/type",
+      "keyword": "type",
+      "params": {
+        "type": "number"
+      },
+      "message": "must be number"
+    }
+  ],
+  "property-name-with-slash": [
+    {
+      "instancePath": "/a~1b",
+      "schemaPath": "#/properties/a~1b/type",
+      "keyword": "type",
+      "params": {
+        "type": "string"
+      },
+      "message": "must be string"
+    }
+  ],
+  "pattern-properties-plus-additional-false": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/additionalProperties",
+      "keyword": "additionalProperties",
+      "params": {
+        "additionalProperty": "nope"
+      },
+      "message": "must NOT have additional properties"
+    }
+  ],
+  "additional-properties-schema": [
+    {
+      "instancePath": "/b",
+      "schemaPath": "#/additionalProperties/type",
+      "keyword": "type",
+      "params": {
+        "type": "number"
+      },
+      "message": "must be number"
+    }
+  ],
+  "tuple-items-with-additional-items-false": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/additionalItems",
+      "keyword": "additionalItems",
+      "params": {
+        "limit": 2
+      },
+      "message": "must NOT have more than 2 items"
+    }
+  ],
+  "tuple-items-type-error": [
+    {
+      "instancePath": "/1",
+      "schemaPath": "#/items/1/type",
+      "keyword": "type",
+      "params": {
+        "type": "number"
+      },
+      "message": "must be number"
+    }
+  ],
+  "items-single-schema": [
+    {
+      "instancePath": "/1",
+      "schemaPath": "#/items/type",
+      "keyword": "type",
+      "params": {
+        "type": "string"
+      },
+      "message": "must be string"
+    },
+    {
+      "instancePath": "/2",
+      "schemaPath": "#/items/type",
+      "keyword": "type",
+      "params": {
+        "type": "string"
+      },
+      "message": "must be string"
+    }
+  ],
+  "contains-fails": [
+    {
+      "instancePath": "/0",
+      "schemaPath": "#/contains/const",
+      "keyword": "const",
+      "params": {
+        "allowedValue": "x"
+      },
+      "message": "must be equal to constant"
+    },
+    {
+      "instancePath": "/1",
+      "schemaPath": "#/contains/const",
+      "keyword": "const",
+      "params": {
+        "allowedValue": "x"
+      },
+      "message": "must be equal to constant"
+    },
+    {
+      "instancePath": "",
+      "schemaPath": "#/contains",
+      "keyword": "contains",
+      "params": {
+        "minContains": 1
+      },
+      "message": "must contain at least 1 valid item(s)"
+    }
+  ],
+  "contains-passes": false,
+  "dependencies-array-triggered": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/dependencies",
+      "keyword": "dependencies",
+      "params": {
+        "property": "a",
+        "missingProperty": "b",
+        "depsCount": 1,
+        "deps": "b"
+      },
+      "message": "must have property b when property a is present"
+    }
+  ],
+  "dependencies-array-satisfied": false,
+  "dependencies-two-missing": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/dependencies",
+      "keyword": "dependencies",
+      "params": {
+        "property": "a",
+        "missingProperty": "b",
+        "depsCount": 2,
+        "deps": "b, c"
+      },
+      "message": "must have properties b, c when property a is present"
+    },
+    {
+      "instancePath": "",
+      "schemaPath": "#/dependencies",
+      "keyword": "dependencies",
+      "params": {
+        "property": "a",
+        "missingProperty": "c",
+        "depsCount": 2,
+        "deps": "b, c"
+      },
+      "message": "must have properties b, c when property a is present"
+    }
+  ],
+  "anyof-all-branches-fail": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/anyOf/0/type",
+      "keyword": "type",
+      "params": {
+        "type": "string"
+      },
+      "message": "must be string"
+    },
+    {
+      "instancePath": "",
+      "schemaPath": "#/anyOf/1/type",
+      "keyword": "type",
+      "params": {
+        "type": "number"
+      },
+      "message": "must be number"
+    },
+    {
+      "instancePath": "",
+      "schemaPath": "#/anyOf",
+      "keyword": "anyOf",
+      "params": {},
+      "message": "must match a schema in anyOf"
+    }
+  ],
+  "anyof-one-passes": false,
+  "oneof-zero-pass": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/oneOf/0/type",
+      "keyword": "type",
+      "params": {
+        "type": "string"
+      },
+      "message": "must be string"
+    },
+    {
+      "instancePath": "",
+      "schemaPath": "#/oneOf/1/type",
+      "keyword": "type",
+      "params": {
+        "type": "number"
+      },
+      "message": "must be number"
+    },
+    {
+      "instancePath": "",
+      "schemaPath": "#/oneOf",
+      "keyword": "oneOf",
+      "params": {
+        "passingSchemas": null
+      },
+      "message": "must match exactly one schema in oneOf"
+    }
+  ],
+  "oneof-two-pass": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/oneOf",
+      "keyword": "oneOf",
+      "params": {
+        "passingSchemas": [
+          0,
+          1
+        ]
+      },
+      "message": "must match exactly one schema in oneOf"
+    }
+  ],
+  "allof-two-failures": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/allOf/0/required",
+      "keyword": "required",
+      "params": {
+        "missingProperty": "a"
+      },
+      "message": "must have required property 'a'"
+    },
+    {
+      "instancePath": "",
+      "schemaPath": "#/allOf/1/required",
+      "keyword": "required",
+      "params": {
+        "missingProperty": "b"
+      },
+      "message": "must have required property 'b'"
+    }
+  ],
+  "allof-nested-property-path": [
+    {
+      "instancePath": "/a",
+      "schemaPath": "#/allOf/0/properties/a/type",
+      "keyword": "type",
+      "params": {
+        "type": "string"
+      },
+      "message": "must be string"
+    }
+  ],
+  "not-triggered": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/not",
+      "keyword": "not",
+      "params": {},
+      "message": "must NOT be valid"
+    }
+  ],
+  "not-satisfied": false,
+  "not-with-required": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/not",
+      "keyword": "not",
+      "params": {},
+      "message": "must NOT be valid"
+    }
+  ],
+  "if-then-triggered": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/then/required",
+      "keyword": "required",
+      "params": {
+        "missingProperty": "current_range_meters"
+      },
+      "message": "must have required property 'current_range_meters'"
+    }
+  ],
+  "if-then-not-matching": false,
+  "if-else-branch": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/else/required",
+      "keyword": "required",
+      "params": {
+        "missingProperty": "b"
+      },
+      "message": "must have required property 'b'"
+    }
+  ],
+  "error-message-required-map": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/errorMessage",
+      "keyword": "errorMessage",
+      "params": {
+        "errors": [
+          {
+            "instancePath": "",
+            "schemaPath": "#/required",
+            "keyword": "required",
+            "params": {
+              "missingProperty": "vehicle_type_id"
+            },
+            "message": "must have required property 'vehicle_type_id'",
+            "emUsed": true
+          }
+        ]
+      },
+      "message": "'vehicle_type_id' is required for this vehicle type"
+    }
+  ],
+  "error-message-partial-map": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/required",
+      "keyword": "required",
+      "params": {
+        "missingProperty": "b"
+      },
+      "message": "must have required property 'b'"
+    },
+    {
+      "instancePath": "",
+      "schemaPath": "#/errorMessage",
+      "keyword": "errorMessage",
+      "params": {
+        "errors": [
+          {
+            "instancePath": "",
+            "schemaPath": "#/required",
+            "keyword": "required",
+            "params": {
+              "missingProperty": "a"
+            },
+            "message": "must have required property 'a'",
+            "emUsed": true
+          }
+        ]
+      },
+      "message": "custom for a"
+    }
+  ],
+  "error-message-inside-items": [
+    {
+      "instancePath": "/vehicles/0",
+      "schemaPath": "#/properties/vehicles/items/errorMessage",
+      "keyword": "errorMessage",
+      "params": {
+        "errors": [
+          {
+            "instancePath": "/vehicles/0",
+            "schemaPath": "#/properties/vehicles/items/required",
+            "keyword": "required",
+            "params": {
+              "missingProperty": "vehicle_type_id"
+            },
+            "message": "must have required property 'vehicle_type_id'",
+            "emUsed": true
+          }
+        ]
+      },
+      "message": "'vehicle_type_id' is required for this vehicle type"
+    }
+  ],
+  "partial-patch-and-merge-v3-vehicle-status": [
+    {
+      "instancePath": "/data/vehicles/0",
+      "schemaPath": "#/properties/data/properties/vehicles/items/then/required",
+      "keyword": "required",
+      "params": {
+        "missingProperty": "current_range_meters"
+      },
+      "message": "must have required property 'current_range_meters'"
+    }
+  ],
+  "partial-patch-missing-vehicle-type-id": [
+    {
+      "instancePath": "/data/vehicles/0",
+      "schemaPath": "#/properties/data/properties/vehicles/items/errorMessage",
+      "keyword": "errorMessage",
+      "params": {
+        "errors": [
+          {
+            "instancePath": "/data/vehicles/0",
+            "schemaPath": "#/properties/data/properties/vehicles/items/required",
+            "keyword": "required",
+            "params": {
+              "missingProperty": "vehicle_type_id"
+            },
+            "message": "must have required property 'vehicle_type_id'",
+            "emUsed": true
+          }
+        ]
+      },
+      "message": "'vehicle_type_id' is required for this vehicle type"
+    }
+  ],
+  "type-and-enum-both-fail": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/type",
+      "keyword": "type",
+      "params": {
+        "type": "string"
+      },
+      "message": "must be string"
+    },
+    {
+      "instancePath": "",
+      "schemaPath": "#/enum",
+      "keyword": "enum",
+      "params": {
+        "allowedValues": [
+          "bicycle",
+          "scooter_standing"
+        ]
+      },
+      "message": "must be equal to one of the allowed values"
+    }
+  ],
+  "type-and-const-both-fail": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/type",
+      "keyword": "type",
+      "params": {
+        "type": "string"
+      },
+      "message": "must be string"
+    },
+    {
+      "instancePath": "",
+      "schemaPath": "#/const",
+      "keyword": "const",
+      "params": {
+        "allowedValue": "3.0"
+      },
+      "message": "must be equal to constant"
+    }
+  ],
+  "type-and-minimum-both-fail": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/type",
+      "keyword": "type",
+      "params": {
+        "type": "number"
+      },
+      "message": "must be number"
+    }
+  ],
+  "type-and-required-both-fail": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/type",
+      "keyword": "type",
+      "params": {
+        "type": "object"
+      },
+      "message": "must be object"
+    }
+  ],
+  "type-and-pattern-both-fail": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/type",
+      "keyword": "type",
+      "params": {
+        "type": "string"
+      },
+      "message": "must be string"
+    }
+  ],
+  "error-message-string-form": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/errorMessage",
+      "keyword": "errorMessage",
+      "params": {
+        "errors": [
+          {
+            "instancePath": "",
+            "schemaPath": "#/required",
+            "keyword": "required",
+            "params": {
+              "missingProperty": "lat"
+            },
+            "message": "must have required property 'lat'",
+            "emUsed": true
+          },
+          {
+            "instancePath": "",
+            "schemaPath": "#/required",
+            "keyword": "required",
+            "params": {
+              "missingProperty": "lon"
+            },
+            "message": "must have required property 'lon'",
+            "emUsed": true
+          }
+        ]
+      },
+      "message": "Both 'lat' and 'lon' are required."
+    }
+  ],
+  "error-message-string-form-passes": false,
+  "error-message-string-inside-anyof": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/anyOf/0/errorMessage",
+      "keyword": "errorMessage",
+      "params": {
+        "errors": [
+          {
+            "instancePath": "",
+            "schemaPath": "#/anyOf/0/required",
+            "keyword": "required",
+            "params": {
+              "missingProperty": "lat"
+            },
+            "message": "must have required property 'lat'",
+            "emUsed": true
+          },
+          {
+            "instancePath": "",
+            "schemaPath": "#/anyOf/0/required",
+            "keyword": "required",
+            "params": {
+              "missingProperty": "lon"
+            },
+            "message": "must have required property 'lon'",
+            "emUsed": true
+          }
+        ]
+      },
+      "message": "Both 'lat' and 'lon' are required."
+    },
+    {
+      "instancePath": "",
+      "schemaPath": "#/anyOf/1/errorMessage",
+      "keyword": "errorMessage",
+      "params": {
+        "errors": [
+          {
+            "instancePath": "",
+            "schemaPath": "#/anyOf/1/required",
+            "keyword": "required",
+            "params": {
+              "missingProperty": "station_id"
+            },
+            "message": "must have required property 'station_id'",
+            "emUsed": true
+          }
+        ]
+      },
+      "message": "'station_id' is required if 'lat' and 'lon' are not present."
+    },
+    {
+      "instancePath": "",
+      "schemaPath": "#/anyOf",
+      "keyword": "anyOf",
+      "params": {},
+      "message": "must match a schema in anyOf"
+    }
+  ],
+  "error-message-string-covers-type-too": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/errorMessage",
+      "keyword": "errorMessage",
+      "params": {
+        "errors": [
+          {
+            "instancePath": "",
+            "schemaPath": "#/type",
+            "keyword": "type",
+            "params": {
+              "type": "object"
+            },
+            "message": "must be object",
+            "emUsed": true
+          }
+        ]
+      },
+      "message": "must be an object"
+    }
+  ],
+  "real-v2.3-free-bike-status-valid": false,
+  "real-v2.3-free-bike-status-no-location": [
+    {
+      "instancePath": "/data/bikes/0",
+      "schemaPath": "#/properties/data/properties/bikes/items/anyOf/0/errorMessage",
+      "keyword": "errorMessage",
+      "params": {
+        "errors": [
+          {
+            "instancePath": "/data/bikes/0",
+            "schemaPath": "#/properties/data/properties/bikes/items/anyOf/0/required",
+            "keyword": "required",
+            "params": {
+              "missingProperty": "lat"
+            },
+            "message": "must have required property 'lat'",
+            "emUsed": true
+          },
+          {
+            "instancePath": "/data/bikes/0",
+            "schemaPath": "#/properties/data/properties/bikes/items/anyOf/0/required",
+            "keyword": "required",
+            "params": {
+              "missingProperty": "lon"
+            },
+            "message": "must have required property 'lon'",
+            "emUsed": true
+          }
+        ]
+      },
+      "message": "Both 'lat' and 'lon' are required."
+    },
+    {
+      "instancePath": "/data/bikes/0",
+      "schemaPath": "#/properties/data/properties/bikes/items/anyOf/1/errorMessage",
+      "keyword": "errorMessage",
+      "params": {
+        "errors": [
+          {
+            "instancePath": "/data/bikes/0",
+            "schemaPath": "#/properties/data/properties/bikes/items/anyOf/1/required",
+            "keyword": "required",
+            "params": {
+              "missingProperty": "station_id"
+            },
+            "message": "must have required property 'station_id'",
+            "emUsed": true
+          }
+        ]
+      },
+      "message": "'station_id' is required if 'lat' and 'lon' are not present."
+    },
+    {
+      "instancePath": "/data/bikes/0",
+      "schemaPath": "#/properties/data/properties/bikes/items/anyOf",
+      "keyword": "anyOf",
+      "params": {},
+      "message": "must match a schema in anyOf"
+    }
+  ],
+  "real-v3.0-vehicle-status-valid": false,
+  "real-v3.0-vehicle-types-bad-form-factor": [
+    {
+      "instancePath": "/data/vehicle_types/0/form_factor",
+      "schemaPath": "#/properties/data/properties/vehicle_types/items/properties/form_factor/type",
+      "keyword": "type",
+      "params": {
+        "type": "string"
+      },
+      "message": "must be string"
+    },
+    {
+      "instancePath": "/data/vehicle_types/0/form_factor",
+      "schemaPath": "#/properties/data/properties/vehicle_types/items/properties/form_factor/enum",
+      "keyword": "enum",
+      "params": {
+        "allowedValues": [
+          "bicycle",
+          "cargo_bicycle",
+          "car",
+          "moped",
+          "scooter_standing",
+          "scooter_seated",
+          "other"
+        ]
+      },
+      "message": "must be equal to one of the allowed values"
+    }
+  ],
+  "real-v2.3-system-information-valid": false,
+  "real-v2.3-system-information-bad-language-missing-name": [
+    {
+      "instancePath": "/data",
+      "schemaPath": "#/properties/data/required",
+      "keyword": "required",
+      "params": {
+        "missingProperty": "name"
+      },
+      "message": "must have required property 'name'"
+    },
+    {
+      "instancePath": "/data/language",
+      "schemaPath": "#/properties/data/properties/language/pattern",
+      "keyword": "pattern",
+      "params": {
+        "pattern": "^[a-z]{2,3}(-[A-Z]{2})?$"
+      },
+      "message": "must match pattern \"^[a-z]{2,3}(-[A-Z]{2})?$\""
+    }
+  ],
+  "real-v3.0-system-information-wrong-name-shape": [
+    {
+      "instancePath": "/data/name",
+      "schemaPath": "#/properties/data/properties/name/type",
+      "keyword": "type",
+      "params": {
+        "type": "array"
+      },
+      "message": "must be array"
+    }
+  ],
+  "real-v3.1-RC3-system-pricing-plans-reservation": [
+    {
+      "instancePath": "/data/plans/0/reservation_price_per_min",
+      "schemaPath": "#/properties/data/properties/plans/items/properties/reservation_price_per_min/minimum",
+      "keyword": "minimum",
+      "params": {
+        "comparison": ">=",
+        "limit": 0
+      },
+      "message": "must be >= 0"
+    }
+  ],
+  "real-v2.3-station-status-missing-required": [
+    {
+      "instancePath": "/data/stations/0",
+      "schemaPath": "#/properties/data/properties/stations/items/required",
+      "keyword": "required",
+      "params": {
+        "missingProperty": "is_installed"
+      },
+      "message": "must have required property 'is_installed'"
+    },
+    {
+      "instancePath": "/data/stations/0",
+      "schemaPath": "#/properties/data/properties/stations/items/required",
+      "keyword": "required",
+      "params": {
+        "missingProperty": "is_renting"
+      },
+      "message": "must have required property 'is_renting'"
+    },
+    {
+      "instancePath": "/data/stations/0",
+      "schemaPath": "#/properties/data/properties/stations/items/required",
+      "keyword": "required",
+      "params": {
+        "missingProperty": "is_returning"
+      },
+      "message": "must have required property 'is_returning'"
+    },
+    {
+      "instancePath": "/data/stations/0",
+      "schemaPath": "#/properties/data/properties/stations/items/required",
+      "keyword": "required",
+      "params": {
+        "missingProperty": "last_reported"
+      },
+      "message": "must have required property 'last_reported'"
+    }
+  ],
+  "real-v3.0-geofencing-zones-nested": [
+    {
+      "instancePath": "/data",
+      "schemaPath": "#/properties/data/required",
+      "keyword": "required",
+      "params": {
+        "missingProperty": "global_rules"
+      },
+      "message": "must have required property 'global_rules'"
+    },
+    {
+      "instancePath": "/data/geofencing_zones/features/0/properties/rules/0",
+      "schemaPath": "#/properties/data/properties/geofencing_zones/properties/features/items/properties/properties/properties/rules/items/required",
+      "keyword": "required",
+      "params": {
+        "missingProperty": "ride_end_allowed"
+      },
+      "message": "must have required property 'ride_end_allowed'"
+    },
+    {
+      "instancePath": "/data/geofencing_zones/features/0/properties/rules/0",
+      "schemaPath": "#/properties/data/properties/geofencing_zones/properties/features/items/properties/properties/properties/rules/items/required",
+      "keyword": "required",
+      "params": {
+        "missingProperty": "ride_through_allowed"
+      },
+      "message": "must have required property 'ride_through_allowed'"
+    }
+  ],
+  "schemapath-pattern-properties-encoding": [
+    {
+      "instancePath": "/en",
+      "schemaPath": "#/patternProperties/%5E%5Ba-z%5D%7B2%2C3%7D(-%5BA-Z%5D%7B2%7D)%3F%24/required",
+      "keyword": "required",
+      "params": {
+        "missingProperty": "feeds"
+      },
+      "message": "must have required property 'feeds'"
+    }
+  ],
+  "schemapath-property-with-slash": [
+    {
+      "instancePath": "/a~1b",
+      "schemaPath": "#/properties/a~1b/type",
+      "keyword": "type",
+      "params": {
+        "type": "string"
+      },
+      "message": "must be string"
+    }
+  ],
+  "schemapath-property-with-tilde": [
+    {
+      "instancePath": "/a~0b",
+      "schemaPath": "#/properties/a~0b/type",
+      "keyword": "type",
+      "params": {
+        "type": "string"
+      },
+      "message": "must be string"
+    }
+  ],
+  "schemapath-property-with-space-and-dollar": [
+    {
+      "instancePath": "/a b$",
+      "schemaPath": "#/properties/a%20b%24/type",
+      "keyword": "type",
+      "params": {
+        "type": "string"
+      },
+      "message": "must be string"
+    }
+  ],
+  "schemapath-pattern-properties-with-slash": [
+    {
+      "instancePath": "/a~1b",
+      "schemaPath": "#/patternProperties/a~1b/type",
+      "keyword": "type",
+      "params": {
+        "type": "string"
+      },
+      "message": "must be string"
+    }
+  ],
+  "schemapath-dependencies-schema-form-key": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/dependencies/a%20b/required",
+      "keyword": "required",
+      "params": {
+        "missingProperty": "c"
+      },
+      "message": "must have required property 'c'"
+    }
+  ],
+  "real-v2.3-gbfs-language-entry-not-object": [
+    {
+      "instancePath": "/data/en/feeds/0",
+      "schemaPath": "#/properties/data/patternProperties/%5E%5Ba-z%5D%7B2%2C3%7D(-%5BA-Z%5D%7B2%7D)%3F%24/properties/feeds/items/type",
+      "keyword": "type",
+      "params": {
+        "type": "object"
+      },
+      "message": "must be object"
+    }
+  ]
+}

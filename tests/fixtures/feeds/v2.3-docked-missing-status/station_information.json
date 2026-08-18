@@ -1,0 +1,15 @@
+{
+  "last_updated": 1640995200,
+  "ttl": 0,
+  "version": "2.3",
+  "data": {
+    "stations": [
+      {
+        "station_id": "st1",
+        "name": "Main St",
+        "lat": 45.5,
+        "lon": -73.6
+      }
+    ]
+  }
+}

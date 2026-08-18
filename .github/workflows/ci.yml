@@ -1,0 +1,82 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    # The differential is a statement about the pinned upstream, not about the
+    # newest commit, so it is also run weekly.
+    - cron: "0 5 * * 1"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.11", "3.12", "3.13", "3.14"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: pip install -e '.[dev]'
+      - run: ruff check .
+      - run: ruff format --check .
+      - run: pyright
+      - run: python -m pytest -q
+
+  # `pip install -e` above hides packaging mistakes: src/ is on the path either
+  # way. This job only ever touches the built wheel, from outside the checkout.
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install build
+      - run: python -m build
+      - name: install the wheel into a fresh venv
+        run: |
+          python -m venv /tmp/wheelenv
+          /tmp/wheelenv/bin/pip install dist/*.whl
+      - name: console script, import and package data
+        working-directory: /tmp
+        run: |
+          /tmp/wheelenv/bin/gbfs-validator --version
+          /tmp/wheelenv/bin/python -c '
+          import gbfs_validator
+          from gbfs_validator.feedhelpers import load_schema
+          assert load_schema("3.1-RC3", "vehicle_types")["properties"]
+          '
+      - name: every module in src/ ships and imports
+        working-directory: /tmp
+        run: |
+          modules=$(cd "$GITHUB_WORKSPACE/src" && find gbfs_validator -name '*.py' \
+            | sed 's|\.py$||; s|/__init__$||; s|/|.|g')
+          /tmp/wheelenv/bin/python -c '
+          import importlib, sys
+          for name in sys.argv[1:]:
+              importlib.import_module(name)
+          print(len(sys.argv) - 1, "modules imported")
+          ' $modules
+
+  differential:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: bash tools/sync_upstream.sh
+      - run: python tools/sync_schemas.py
+      # The vendored schemas must match the pin, or the goldens describe a
+      # feed format we no longer ship.
+      - run: git diff --exit-code src/gbfs_validator/data
+      - run: pip install -e .
+      - run: python tools/differential.py

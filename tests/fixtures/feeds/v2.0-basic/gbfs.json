@@ -1,0 +1,5 @@
+{"last_updated": 1566224400, "ttl": 0, "version": "2.0",
+ "data": {"en": {"feeds": [
+   {"name": "system_information", "url": "{BASE}/system_information.json"},
+   {"name": "station_information", "url": "{BASE}/station_information.json"},
+   {"name": "station_status", "url": "{BASE}/station_status.json"}]}}}

@@ -1,0 +1,11 @@
+{
+  "last_updated": 1640995200,
+  "ttl": 0,
+  "version": "2.3",
+  "data": {
+    "system_id": "sys1",
+    "language": "en",
+    "name": "Example System",
+    "timezone": "Europe/Paris"
+  }
+}

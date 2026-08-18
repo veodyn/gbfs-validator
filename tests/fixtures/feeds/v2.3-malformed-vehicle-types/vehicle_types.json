@@ -1,0 +1,13 @@
+{
+  "last_updated": 1640995200,
+  "ttl": 0,
+  "version": "2.3",
+  "data": {
+    "vehicle_types": {
+      "vehicle_type_id": "ebike1",
+      "form_factor": "bicycle",
+      "propulsion_type": "electric_assist",
+      "max_range_meters": 40000
+    }
+  }
+}

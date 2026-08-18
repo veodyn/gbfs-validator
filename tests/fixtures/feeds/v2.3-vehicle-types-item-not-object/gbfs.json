@@ -1,0 +1,1 @@
+{"last_updated": 1566224400, "ttl": 0, "version": "2.3", "data": {"en": {"feeds": [{"name": "system_information", "url": "{BASE}/system_information.json"}, {"name": "vehicle_types", "url": "{BASE}/vehicle_types.json"}]}}}

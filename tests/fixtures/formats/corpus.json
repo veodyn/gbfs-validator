@@ -1,0 +1,44 @@
+{
+  "uri": [
+    "https://example.com/gbfs.json",
+    "http://a.b/c?d=e#f",
+    "ftp://x/y",
+    "example.com",
+    "//nohost",
+    "https://",
+    "mailto:a@b.c",
+    "not a uri",
+    "https://example.com/päth",
+    "urn:isbn:0451450523",
+    ""
+  ],
+  "email": [
+    "a@b.co",
+    "first.last+tag@sub.example.com",
+    "no-at-sign",
+    "a@b",
+    "a@-bad.com",
+    "a b@c.d",
+    "UPPER@CASE.COM",
+    ""
+  ],
+  "date": [
+    "2026-08-17",
+    "2026-02-29",
+    "2024-02-29",
+    "2026-13-01",
+    "2026-00-10",
+    "2026-1-1",
+    "20260817",
+    ""
+  ],
+  "date-time": [
+    "2019-08-19T10:20:00-04:00",
+    "2026-08-17T23:59:60Z",
+    "2026-08-17T12:00:00",
+    "2026-08-17 12:00:00Z",
+    "2026-08-17T12:00:00.123+00:00",
+    "2026-08-17T25:00:00Z",
+    ""
+  ]
+}

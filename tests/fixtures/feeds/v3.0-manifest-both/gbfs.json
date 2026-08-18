@@ -1,0 +1,17 @@
+{
+  "last_updated": "2022-01-01T00:00:00Z",
+  "ttl": 0,
+  "version": "3.0",
+  "data": {
+    "feeds": [
+      {
+        "name": "system_information",
+        "url": "{BASE}/system_information.json"
+      },
+      {
+        "name": "manifest",
+        "url": "{BASE}/manifest.json"
+      }
+    ]
+  }
+}

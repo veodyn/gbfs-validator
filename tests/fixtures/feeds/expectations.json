@@ -1,0 +1,3830 @@
+{
+ "no-autodiscovery": {
+  "summary": {
+   "errorsCount": null,
+   "gbfsResult": {
+    "errors": [],
+    "errorsCount": null,
+    "exists": false,
+    "file": "gbfs.json",
+    "hasErrors": false,
+    "index": 0,
+    "required": false
+   },
+   "hasErrors": false,
+   "version": null,
+   "versionUnimplemented": true
+  }
+ },
+ "null-gbfs-json": {
+  "summary": {
+   "errorsCount": null,
+   "gbfsResult": {
+    "errors": [],
+    "errorsCount": null,
+    "exists": false,
+    "file": "gbfs.json",
+    "hasErrors": false,
+    "index": 0,
+    "required": false
+   },
+   "hasErrors": false,
+   "version": null,
+   "versionUnimplemented": true
+  }
+ },
+ "regex-gbfs-underscore-json": {
+  "summary": {
+   "errorsCount": null,
+   "gbfsResult": {
+    "errors": [],
+    "errorsCount": null,
+    "exists": false,
+    "file": "gbfs.json",
+    "hasErrors": false,
+    "index": 0,
+    "required": false
+   },
+   "hasErrors": false,
+   "version": null,
+   "versionUnimplemented": true
+  }
+ },
+ "v1.0-legacy-optional-gbfs": {
+  "files": [
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "gbfs.json",
+    "hasErrors": false,
+    "index": 0,
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "system_information.json",
+    "hasErrors": false,
+    "index": 1,
+    "languages": [
+     [
+      "en",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_information.json",
+    "hasErrors": false,
+    "index": 2,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_status.json",
+    "hasErrors": false,
+    "index": 3,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "free_bike_status.json",
+    "hasErrors": false,
+    "index": 4,
+    "languages": [
+     [
+      "en",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_hours.json",
+    "hasErrors": false,
+    "index": 5,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_calendar.json",
+    "hasErrors": false,
+    "index": 6,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_regions.json",
+    "hasErrors": false,
+    "index": 7,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_pricing_plans.json",
+    "hasErrors": false,
+    "index": 8,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_alerts.json",
+    "hasErrors": false,
+    "index": 9,
+    "languages": [],
+    "required": false
+   }
+  ],
+  "summary": {
+   "errorsCount": 0,
+   "hasErrors": false,
+   "version": {
+    "detected": "1.0",
+    "validated": "1.0"
+   },
+   "versionUnimplemented": false
+  }
+ },
+ "v1.1-legacy": {
+  "files": [
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "gbfs.json",
+    "hasErrors": false,
+    "index": 0,
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "gbfs_versions.json",
+    "hasErrors": false,
+    "index": 1,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "system_information.json",
+    "hasErrors": false,
+    "index": 2,
+    "languages": [
+     [
+      "en",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_information.json",
+    "hasErrors": false,
+    "index": 3,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_status.json",
+    "hasErrors": false,
+    "index": 4,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "free_bike_status.json",
+    "hasErrors": false,
+    "index": 5,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_hours.json",
+    "hasErrors": false,
+    "index": 6,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_calendar.json",
+    "hasErrors": false,
+    "index": 7,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_regions.json",
+    "hasErrors": false,
+    "index": 8,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_pricing_plans.json",
+    "hasErrors": false,
+    "index": 9,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_alerts.json",
+    "hasErrors": false,
+    "index": 10,
+    "languages": [],
+    "required": false
+   }
+  ],
+  "summary": {
+   "errorsCount": 0,
+   "hasErrors": false,
+   "version": {
+    "detected": "1.1",
+    "validated": "1.1"
+   },
+   "versionUnimplemented": false
+  }
+ },
+ "v2.0-basic": {
+  "files": [
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "gbfs.json",
+    "hasErrors": false,
+    "index": 0,
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "gbfs_versions.json",
+    "hasErrors": false,
+    "index": 1,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "system_information.json",
+    "hasErrors": false,
+    "index": 2,
+    "languages": [
+     [
+      "en",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "station_information.json",
+    "hasErrors": false,
+    "index": 3,
+    "languages": [
+     [
+      "en",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "station_status.json",
+    "hasErrors": false,
+    "index": 4,
+    "languages": [
+     [
+      "en",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "free_bike_status.json",
+    "hasErrors": false,
+    "index": 5,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_hours.json",
+    "hasErrors": false,
+    "index": 6,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_calendar.json",
+    "hasErrors": false,
+    "index": 7,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_regions.json",
+    "hasErrors": false,
+    "index": 8,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_pricing_plans.json",
+    "hasErrors": false,
+    "index": 9,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_alerts.json",
+    "hasErrors": false,
+    "index": 10,
+    "languages": [],
+    "required": false
+   }
+  ],
+  "summary": {
+   "errorsCount": 0,
+   "hasErrors": false,
+   "version": {
+    "detected": "2.0",
+    "validated": "2.0"
+   },
+   "versionUnimplemented": false
+  }
+ },
+ "v2.1-basic": {
+  "files": [
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "gbfs.json",
+    "hasErrors": false,
+    "index": 0,
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "gbfs_versions.json",
+    "hasErrors": false,
+    "index": 1,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "system_information.json",
+    "hasErrors": false,
+    "index": 2,
+    "languages": [
+     [
+      "en",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "vehicle_types.json",
+    "hasErrors": false,
+    "index": 3,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_information.json",
+    "hasErrors": false,
+    "index": 4,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_status.json",
+    "hasErrors": false,
+    "index": 5,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "free_bike_status.json",
+    "hasErrors": false,
+    "index": 6,
+    "languages": [
+     [
+      "en",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_hours.json",
+    "hasErrors": false,
+    "index": 7,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_calendar.json",
+    "hasErrors": false,
+    "index": 8,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_regions.json",
+    "hasErrors": false,
+    "index": 9,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_pricing_plans.json",
+    "hasErrors": false,
+    "index": 10,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_alerts.json",
+    "hasErrors": false,
+    "index": 11,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "geofencing_zones.json",
+    "hasErrors": false,
+    "index": 12,
+    "languages": [],
+    "required": false
+   }
+  ],
+  "summary": {
+   "errorsCount": 0,
+   "hasErrors": false,
+   "version": {
+    "detected": "2.1",
+    "validated": "2.1"
+   },
+   "versionUnimplemented": false
+  }
+ },
+ "v2.2-missing-required-lang": {
+  "files": [
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "gbfs.json",
+    "hasErrors": false,
+    "index": 0,
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "gbfs_versions.json",
+    "hasErrors": false,
+    "index": 1,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "system_information.json",
+    "hasErrors": false,
+    "index": 2,
+    "languages": [
+     [
+      "en",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "vehicle_types.json",
+    "hasErrors": false,
+    "index": 3,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_information.json",
+    "hasErrors": false,
+    "index": 4,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_status.json",
+    "hasErrors": false,
+    "index": 5,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "free_bike_status.json",
+    "hasErrors": false,
+    "index": 6,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_hours.json",
+    "hasErrors": false,
+    "index": 7,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_calendar.json",
+    "hasErrors": false,
+    "index": 8,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_regions.json",
+    "hasErrors": false,
+    "index": 9,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_pricing_plans.json",
+    "hasErrors": false,
+    "index": 10,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_alerts.json",
+    "hasErrors": false,
+    "index": 11,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "geofencing_zones.json",
+    "hasErrors": false,
+    "index": 12,
+    "languages": [],
+    "required": false
+   }
+  ],
+  "summary": {
+   "errorsCount": 0,
+   "hasErrors": false,
+   "version": {
+    "detected": "2.2",
+    "validated": "2.2"
+   },
+   "versionUnimplemented": false
+  }
+ },
+ "v2.2-multilang": {
+  "files": [
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "gbfs.json",
+    "hasErrors": false,
+    "index": 0,
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "gbfs_versions.json",
+    "hasErrors": false,
+    "index": 1,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": null,
+    "exists": true,
+    "file": "system_information.json",
+    "hasErrors": true,
+    "index": 2,
+    "languages": [
+     [
+      "en",
+      true,
+      []
+     ],
+     [
+      "fr",
+      true,
+      [
+       [
+        "/data",
+        "#/properties/data/required",
+        "required",
+        "{\"missingProperty\": \"language\"}"
+       ]
+      ]
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "vehicle_types.json",
+    "hasErrors": false,
+    "index": 3,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_information.json",
+    "hasErrors": false,
+    "index": 4,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_status.json",
+    "hasErrors": false,
+    "index": 5,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "free_bike_status.json",
+    "hasErrors": false,
+    "index": 6,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_hours.json",
+    "hasErrors": false,
+    "index": 7,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_calendar.json",
+    "hasErrors": false,
+    "index": 8,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_regions.json",
+    "hasErrors": false,
+    "index": 9,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_pricing_plans.json",
+    "hasErrors": false,
+    "index": 10,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_alerts.json",
+    "hasErrors": false,
+    "index": 11,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "geofencing_zones.json",
+    "hasErrors": false,
+    "index": 12,
+    "languages": [],
+    "required": false
+   }
+  ],
+  "summary": {
+   "errorsCount": null,
+   "hasErrors": true,
+   "version": {
+    "detected": "2.2",
+    "validated": "2.2"
+   },
+   "versionUnimplemented": false
+  }
+ },
+ "v2.3-array-vehicle-type-id": {
+  "files": [
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "gbfs.json",
+    "hasErrors": false,
+    "index": 0,
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "gbfs_versions.json",
+    "hasErrors": false,
+    "index": 1,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "system_information.json",
+    "hasErrors": false,
+    "index": 2,
+    "languages": [
+     [
+      "en",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 1,
+    "exists": false,
+    "file": "vehicle_types.json",
+    "hasErrors": true,
+    "index": 3,
+    "languages": [],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_information.json",
+    "hasErrors": false,
+    "index": 4,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_status.json",
+    "hasErrors": false,
+    "index": 5,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 1,
+    "exists": true,
+    "file": "free_bike_status.json",
+    "hasErrors": true,
+    "index": 6,
+    "languages": [
+     [
+      "en",
+      true,
+      [
+       [
+        "/data/bikes/0/vehicle_type_id",
+        "#/properties/data/properties/bikes/items/properties/vehicle_type_id/type",
+        "type",
+        "{\"type\": \"string\"}"
+       ]
+      ]
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_hours.json",
+    "hasErrors": false,
+    "index": 7,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_calendar.json",
+    "hasErrors": false,
+    "index": 8,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_regions.json",
+    "hasErrors": false,
+    "index": 9,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_pricing_plans.json",
+    "hasErrors": false,
+    "index": 10,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_alerts.json",
+    "hasErrors": false,
+    "index": 11,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "geofencing_zones.json",
+    "hasErrors": false,
+    "index": 12,
+    "languages": [],
+    "required": false
+   }
+  ],
+  "summary": {
+   "errorsCount": 2,
+   "hasErrors": true,
+   "version": {
+    "detected": "2.3",
+    "validated": "2.3"
+   },
+   "versionUnimplemented": false
+  }
+ },
+ "v2.3-discovery-data-array": {
+  "files": [
+   {
+    "errors": [
+     [
+      "/data",
+      "#/properties/data/type",
+      "type",
+      "{\"type\": \"object\"}"
+     ]
+    ],
+    "errorsCount": 1,
+    "exists": true,
+    "file": "gbfs.json",
+    "hasErrors": true,
+    "index": 0,
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "gbfs_versions.json",
+    "hasErrors": false,
+    "index": 1,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 1,
+    "exists": false,
+    "file": "system_information.json",
+    "hasErrors": true,
+    "index": 2,
+    "languages": [],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "vehicle_types.json",
+    "hasErrors": false,
+    "index": 3,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_information.json",
+    "hasErrors": false,
+    "index": 4,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_status.json",
+    "hasErrors": false,
+    "index": 5,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "free_bike_status.json",
+    "hasErrors": false,
+    "index": 6,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_hours.json",
+    "hasErrors": false,
+    "index": 7,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_calendar.json",
+    "hasErrors": false,
+    "index": 8,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_regions.json",
+    "hasErrors": false,
+    "index": 9,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_pricing_plans.json",
+    "hasErrors": false,
+    "index": 10,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_alerts.json",
+    "hasErrors": false,
+    "index": 11,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "geofencing_zones.json",
+    "hasErrors": false,
+    "index": 12,
+    "languages": [],
+    "required": false
+   }
+  ],
+  "summary": {
+   "errorsCount": 2,
+   "hasErrors": true,
+   "version": {
+    "detected": "2.3",
+    "validated": "2.3"
+   },
+   "versionUnimplemented": false
+  }
+ },
+ "v2.3-docked-clean": {
+  "files": [
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "gbfs.json",
+    "hasErrors": false,
+    "index": 0,
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "gbfs_versions.json",
+    "hasErrors": false,
+    "index": 1,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "system_information.json",
+    "hasErrors": false,
+    "index": 2,
+    "languages": [
+     [
+      "en",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "vehicle_types.json",
+    "hasErrors": false,
+    "index": 3,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "station_information.json",
+    "hasErrors": false,
+    "index": 4,
+    "languages": [
+     [
+      "en",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "station_status.json",
+    "hasErrors": false,
+    "index": 5,
+    "languages": [
+     [
+      "en",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "free_bike_status.json",
+    "hasErrors": false,
+    "index": 6,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_hours.json",
+    "hasErrors": false,
+    "index": 7,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_calendar.json",
+    "hasErrors": false,
+    "index": 8,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_regions.json",
+    "hasErrors": false,
+    "index": 9,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_pricing_plans.json",
+    "hasErrors": false,
+    "index": 10,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_alerts.json",
+    "hasErrors": false,
+    "index": 11,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "geofencing_zones.json",
+    "hasErrors": false,
+    "index": 12,
+    "languages": [],
+    "required": false
+   }
+  ],
+  "summary": {
+   "errorsCount": 0,
+   "hasErrors": false,
+   "version": {
+    "detected": "2.3",
+    "validated": "2.3"
+   },
+   "versionUnimplemented": false
+  }
+ },
+ "v2.3-docked-missing-status": {
+  "files": [
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "gbfs.json",
+    "hasErrors": false,
+    "index": 0,
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "gbfs_versions.json",
+    "hasErrors": false,
+    "index": 1,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "system_information.json",
+    "hasErrors": false,
+    "index": 2,
+    "languages": [
+     [
+      "en",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "vehicle_types.json",
+    "hasErrors": false,
+    "index": 3,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "station_information.json",
+    "hasErrors": false,
+    "index": 4,
+    "languages": [
+     [
+      "en",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 1,
+    "exists": false,
+    "file": "station_status.json",
+    "hasErrors": true,
+    "index": 5,
+    "languages": [],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "free_bike_status.json",
+    "hasErrors": false,
+    "index": 6,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_hours.json",
+    "hasErrors": false,
+    "index": 7,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_calendar.json",
+    "hasErrors": false,
+    "index": 8,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_regions.json",
+    "hasErrors": false,
+    "index": 9,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_pricing_plans.json",
+    "hasErrors": false,
+    "index": 10,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_alerts.json",
+    "hasErrors": false,
+    "index": 11,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "geofencing_zones.json",
+    "hasErrors": false,
+    "index": 12,
+    "languages": [],
+    "required": false
+   }
+  ],
+  "summary": {
+   "errorsCount": 1,
+   "hasErrors": true,
+   "version": {
+    "detected": "2.3",
+    "validated": "2.3"
+   },
+   "versionUnimplemented": false
+  }
+ },
+ "v2.3-docked-vehicle-types-available": {
+  "files": [
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "gbfs.json",
+    "hasErrors": false,
+    "index": 0,
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "gbfs_versions.json",
+    "hasErrors": false,
+    "index": 1,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "system_information.json",
+    "hasErrors": false,
+    "index": 2,
+    "languages": [
+     [
+      "en",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "vehicle_types.json",
+    "hasErrors": false,
+    "index": 3,
+    "languages": [
+     [
+      "en",
+      true,
+      []
+     ]
+    ],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "station_information.json",
+    "hasErrors": false,
+    "index": 4,
+    "languages": [
+     [
+      "en",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 2,
+    "exists": true,
+    "file": "station_status.json",
+    "hasErrors": true,
+    "index": 5,
+    "languages": [
+     [
+      "en",
+      true,
+      [
+       [
+        "/data/stations/0/vehicle_types_available/0/vehicle_type_id",
+        "#/properties/data/properties/stations/items/properties/vehicle_types_available/items/properties/vehicle_type_id/enum",
+        "enum",
+        "{\"allowedValues\": [\"bike1\"]}"
+       ],
+       [
+        "/data/stations/1",
+        "#/properties/data/properties/stations/items/required",
+        "required",
+        "{\"missingProperty\": \"vehicle_types_available\"}"
+       ]
+      ]
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "free_bike_status.json",
+    "hasErrors": false,
+    "index": 6,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_hours.json",
+    "hasErrors": false,
+    "index": 7,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_calendar.json",
+    "hasErrors": false,
+    "index": 8,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_regions.json",
+    "hasErrors": false,
+    "index": 9,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_pricing_plans.json",
+    "hasErrors": false,
+    "index": 10,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_alerts.json",
+    "hasErrors": false,
+    "index": 11,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "geofencing_zones.json",
+    "hasErrors": false,
+    "index": 12,
+    "languages": [],
+    "required": false
+   }
+  ],
+  "summary": {
+   "errorsCount": 2,
+   "hasErrors": true,
+   "version": {
+    "detected": "2.3",
+    "validated": "2.3"
+   },
+   "versionUnimplemented": false
+  }
+ },
+ "v2.3-falsy-vehicle-type-id": {
+  "files": [
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "gbfs.json",
+    "hasErrors": false,
+    "index": 0,
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "gbfs_versions.json",
+    "hasErrors": false,
+    "index": 1,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "system_information.json",
+    "hasErrors": false,
+    "index": 2,
+    "languages": [
+     [
+      "en",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "vehicle_types.json",
+    "hasErrors": false,
+    "index": 3,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_information.json",
+    "hasErrors": false,
+    "index": 4,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_status.json",
+    "hasErrors": false,
+    "index": 5,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "free_bike_status.json",
+    "hasErrors": false,
+    "index": 6,
+    "languages": [
+     [
+      "en",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_hours.json",
+    "hasErrors": false,
+    "index": 7,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_calendar.json",
+    "hasErrors": false,
+    "index": 8,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_regions.json",
+    "hasErrors": false,
+    "index": 9,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_pricing_plans.json",
+    "hasErrors": false,
+    "index": 10,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_alerts.json",
+    "hasErrors": false,
+    "index": 11,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "geofencing_zones.json",
+    "hasErrors": false,
+    "index": 12,
+    "languages": [],
+    "required": false
+   }
+  ],
+  "summary": {
+   "errorsCount": 0,
+   "hasErrors": false,
+   "version": {
+    "detected": "2.3",
+    "validated": "2.3"
+   },
+   "versionUnimplemented": false
+  }
+ },
+ "v2.3-freefloating-partials": {
+  "files": [
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "gbfs.json",
+    "hasErrors": false,
+    "index": 0,
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "gbfs_versions.json",
+    "hasErrors": false,
+    "index": 1,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 1,
+    "exists": true,
+    "file": "system_information.json",
+    "hasErrors": true,
+    "index": 2,
+    "languages": [
+     [
+      "en",
+      true,
+      [
+       [
+        "/data",
+        "#/properties/data/required",
+        "required",
+        "{\"missingProperty\": \"rental_apps\"}"
+       ]
+      ]
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 1,
+    "exists": true,
+    "file": "vehicle_types.json",
+    "hasErrors": true,
+    "index": 3,
+    "languages": [
+     [
+      "en",
+      true,
+      [
+       [
+        "/data/vehicle_types/0/default_pricing_plan_id",
+        "#/properties/data/properties/vehicle_types/items/properties/default_pricing_plan_id/enum",
+        "enum",
+        "{\"allowedValues\": [\"plan1\"]}"
+       ]
+      ]
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_information.json",
+    "hasErrors": false,
+    "index": 4,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_status.json",
+    "hasErrors": false,
+    "index": 5,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 1,
+    "exists": true,
+    "file": "free_bike_status.json",
+    "hasErrors": true,
+    "index": 6,
+    "languages": [
+     [
+      "en",
+      true,
+      [
+       [
+        "/data/bikes/0",
+        "#/properties/data/properties/bikes/items/then/required",
+        "required",
+        "{\"missingProperty\": \"current_range_meters\"}"
+       ]
+      ]
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_hours.json",
+    "hasErrors": false,
+    "index": 7,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_calendar.json",
+    "hasErrors": false,
+    "index": 8,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_regions.json",
+    "hasErrors": false,
+    "index": 9,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "system_pricing_plans.json",
+    "hasErrors": false,
+    "index": 10,
+    "languages": [
+     [
+      "en",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_alerts.json",
+    "hasErrors": false,
+    "index": 11,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "geofencing_zones.json",
+    "hasErrors": false,
+    "index": 12,
+    "languages": [],
+    "required": false
+   }
+  ],
+  "summary": {
+   "errorsCount": 3,
+   "hasErrors": true,
+   "version": {
+    "detected": "2.3",
+    "validated": "2.3"
+   },
+   "versionUnimplemented": false
+  }
+ },
+ "v2.3-language-without-feeds": {
+  "critical": true
+ },
+ "v2.3-malformed-vehicle-types": {
+  "critical": true
+ },
+ "v2.3-numeric-version": {
+  "files": [
+   {
+    "errors": [
+     [
+      "/version",
+      "#/properties/version/const",
+      "const",
+      "{\"allowedValue\": \"2.3\"}"
+     ],
+     [
+      "/version",
+      "#/properties/version/type",
+      "type",
+      "{\"type\": \"string\"}"
+     ]
+    ],
+    "errorsCount": 2,
+    "exists": true,
+    "file": "gbfs.json",
+    "hasErrors": true,
+    "index": 0,
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "gbfs_versions.json",
+    "hasErrors": false,
+    "index": 1,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "system_information.json",
+    "hasErrors": false,
+    "index": 2,
+    "languages": [
+     [
+      "en",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "vehicle_types.json",
+    "hasErrors": false,
+    "index": 3,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_information.json",
+    "hasErrors": false,
+    "index": 4,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_status.json",
+    "hasErrors": false,
+    "index": 5,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "free_bike_status.json",
+    "hasErrors": false,
+    "index": 6,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_hours.json",
+    "hasErrors": false,
+    "index": 7,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_calendar.json",
+    "hasErrors": false,
+    "index": 8,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_regions.json",
+    "hasErrors": false,
+    "index": 9,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_pricing_plans.json",
+    "hasErrors": false,
+    "index": 10,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_alerts.json",
+    "hasErrors": false,
+    "index": 11,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "geofencing_zones.json",
+    "hasErrors": false,
+    "index": 12,
+    "languages": [],
+    "required": false
+   }
+  ],
+  "summary": {
+   "errorsCount": 2,
+   "hasErrors": true,
+   "version": {
+    "detected": 2.3,
+    "validated": 2.3
+   },
+   "versionUnimplemented": false
+  }
+ },
+ "v2.3-plan-without-plan-id": {
+  "critical": true
+ },
+ "v2.3-vehicle-types-item-not-object": {
+  "files": [
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "gbfs.json",
+    "hasErrors": false,
+    "index": 0,
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "gbfs_versions.json",
+    "hasErrors": false,
+    "index": 1,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "system_information.json",
+    "hasErrors": false,
+    "index": 2,
+    "languages": [
+     [
+      "en",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 1,
+    "exists": true,
+    "file": "vehicle_types.json",
+    "hasErrors": true,
+    "index": 3,
+    "languages": [
+     [
+      "en",
+      true,
+      [
+       [
+        "/data/vehicle_types/0",
+        "#/properties/data/properties/vehicle_types/items/type",
+        "type",
+        "{\"type\": \"object\"}"
+       ]
+      ]
+     ]
+    ],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_information.json",
+    "hasErrors": false,
+    "index": 4,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_status.json",
+    "hasErrors": false,
+    "index": 5,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "free_bike_status.json",
+    "hasErrors": false,
+    "index": 6,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_hours.json",
+    "hasErrors": false,
+    "index": 7,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_calendar.json",
+    "hasErrors": false,
+    "index": 8,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_regions.json",
+    "hasErrors": false,
+    "index": 9,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_pricing_plans.json",
+    "hasErrors": false,
+    "index": 10,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_alerts.json",
+    "hasErrors": false,
+    "index": 11,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "geofencing_zones.json",
+    "hasErrors": false,
+    "index": 12,
+    "languages": [],
+    "required": false
+   }
+  ],
+  "summary": {
+   "errorsCount": 1,
+   "hasErrors": true,
+   "version": {
+    "detected": "2.3",
+    "validated": "2.3"
+   },
+   "versionUnimplemented": false
+  }
+ },
+ "v3.0-discovery-data-null": {
+  "critical": true
+ },
+ "v3.0-discovery-without-data": {
+  "critical": true
+ },
+ "v3.0-feeds-item-not-object": {
+  "files": [
+   {
+    "errors": [
+     [
+      "/data/feeds/0",
+      "#/properties/data/properties/feeds/items/type",
+      "type",
+      "{\"type\": \"object\"}"
+     ]
+    ],
+    "errorsCount": 1,
+    "exists": true,
+    "file": "gbfs.json",
+    "hasErrors": true,
+    "index": 0,
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "manifest.json",
+    "hasErrors": false,
+    "index": 1,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "gbfs_versions.json",
+    "hasErrors": false,
+    "index": 2,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 1,
+    "exists": false,
+    "file": "system_information.json",
+    "hasErrors": true,
+    "index": 3,
+    "languages": [],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "vehicle_types.json",
+    "hasErrors": false,
+    "index": 4,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_information.json",
+    "hasErrors": false,
+    "index": 5,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_status.json",
+    "hasErrors": false,
+    "index": 6,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "vehicle_status.json",
+    "hasErrors": false,
+    "index": 7,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_regions.json",
+    "hasErrors": false,
+    "index": 8,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_pricing_plans.json",
+    "hasErrors": false,
+    "index": 9,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_alerts.json",
+    "hasErrors": false,
+    "index": 10,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "geofencing_zones.json",
+    "hasErrors": false,
+    "index": 11,
+    "languages": [],
+    "required": false
+   }
+  ],
+  "summary": {
+   "errorsCount": 2,
+   "hasErrors": true,
+   "version": {
+    "detected": "3.0",
+    "validated": "3.0"
+   },
+   "versionUnimplemented": false
+  }
+ },
+ "v3.0-manifest-both": {
+  "files": [
+   {
+    "errors": [
+     [
+      "/data/feeds/1/name",
+      "#/properties/data/properties/feeds/items/properties/name/enum",
+      "enum",
+      "{\"allowedValues\": [\"gbfs\", \"gbfs_versions\", \"system_information\", \"vehicle_types\", \"station_information\", \"station_status\", \"vehicle_status\", \"system_alerts\", \"system_regions\", \"system_pricing_plans\", \"geofencing_zones\"]}"
+     ]
+    ],
+    "errorsCount": 1,
+    "exists": true,
+    "file": "gbfs.json",
+    "hasErrors": true,
+    "index": 0,
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "manifest.json",
+    "hasErrors": false,
+    "index": 1,
+    "languages": [
+     [
+      "",
+      true,
+      []
+     ]
+    ],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "gbfs_versions.json",
+    "hasErrors": false,
+    "index": 2,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "system_information.json",
+    "hasErrors": false,
+    "index": 3,
+    "languages": [
+     [
+      "",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "vehicle_types.json",
+    "hasErrors": false,
+    "index": 4,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_information.json",
+    "hasErrors": false,
+    "index": 5,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_status.json",
+    "hasErrors": false,
+    "index": 6,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "vehicle_status.json",
+    "hasErrors": false,
+    "index": 7,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_regions.json",
+    "hasErrors": false,
+    "index": 8,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_pricing_plans.json",
+    "hasErrors": false,
+    "index": 9,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_alerts.json",
+    "hasErrors": false,
+    "index": 10,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "geofencing_zones.json",
+    "hasErrors": false,
+    "index": 11,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "manifest.json",
+    "hasErrors": false,
+    "index": 12,
+    "languages": [
+     [
+      "",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   }
+  ],
+  "summary": {
+   "errorsCount": 1,
+   "hasErrors": true,
+   "version": {
+    "detected": "3.0",
+    "validated": "3.0"
+   },
+   "versionUnimplemented": false
+  }
+ },
+ "v3.0-manifest-chase": {
+  "files": [
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "gbfs.json",
+    "hasErrors": false,
+    "index": 0,
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "manifest.json",
+    "hasErrors": false,
+    "index": 1,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "gbfs_versions.json",
+    "hasErrors": false,
+    "index": 2,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "system_information.json",
+    "hasErrors": false,
+    "index": 3,
+    "languages": [
+     [
+      "",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "vehicle_types.json",
+    "hasErrors": false,
+    "index": 4,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_information.json",
+    "hasErrors": false,
+    "index": 5,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_status.json",
+    "hasErrors": false,
+    "index": 6,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "vehicle_status.json",
+    "hasErrors": false,
+    "index": 7,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_regions.json",
+    "hasErrors": false,
+    "index": 8,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_pricing_plans.json",
+    "hasErrors": false,
+    "index": 9,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_alerts.json",
+    "hasErrors": false,
+    "index": 10,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "geofencing_zones.json",
+    "hasErrors": false,
+    "index": 11,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "manifest.json",
+    "hasErrors": false,
+    "index": 12,
+    "languages": [
+     [
+      "",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   }
+  ],
+  "summary": {
+   "errorsCount": 0,
+   "hasErrors": false,
+   "version": {
+    "detected": "3.0",
+    "validated": "3.0"
+   },
+   "versionUnimplemented": false
+  }
+ },
+ "v3.0-manifest-fetch-fails": {
+  "files": [
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "gbfs.json",
+    "hasErrors": false,
+    "index": 0,
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "manifest.json",
+    "hasErrors": false,
+    "index": 1,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "gbfs_versions.json",
+    "hasErrors": false,
+    "index": 2,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "system_information.json",
+    "hasErrors": false,
+    "index": 3,
+    "languages": [
+     [
+      "",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "vehicle_types.json",
+    "hasErrors": false,
+    "index": 4,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_information.json",
+    "hasErrors": false,
+    "index": 5,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_status.json",
+    "hasErrors": false,
+    "index": 6,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "vehicle_status.json",
+    "hasErrors": false,
+    "index": 7,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_regions.json",
+    "hasErrors": false,
+    "index": 8,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_pricing_plans.json",
+    "hasErrors": false,
+    "index": 9,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_alerts.json",
+    "hasErrors": false,
+    "index": 10,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "geofencing_zones.json",
+    "hasErrors": false,
+    "index": 11,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [
+     [
+      "",
+      "#/type",
+      "type",
+      "{\"type\": \"object\"}"
+     ]
+    ],
+    "errorsCount": 1,
+    "exists": false,
+    "file": "manifest.json",
+    "hasErrors": false,
+    "index": 12,
+    "required": true
+   }
+  ],
+  "summary": {
+   "errorsCount": 1,
+   "hasErrors": true,
+   "version": {
+    "detected": "3.0",
+    "validated": "3.0"
+   },
+   "versionUnimplemented": false
+  }
+ },
+ "v3.0-minimal": {
+  "files": [
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "gbfs.json",
+    "hasErrors": false,
+    "index": 0,
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "manifest.json",
+    "hasErrors": false,
+    "index": 1,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "gbfs_versions.json",
+    "hasErrors": false,
+    "index": 2,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 1,
+    "exists": true,
+    "file": "system_information.json",
+    "hasErrors": true,
+    "index": 3,
+    "languages": [
+     [
+      "",
+      true,
+      [
+       [
+        "/data/name",
+        "#/properties/data/properties/name/type",
+        "type",
+        "{\"type\": \"array\"}"
+       ]
+      ]
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "vehicle_types.json",
+    "hasErrors": false,
+    "index": 4,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_information.json",
+    "hasErrors": false,
+    "index": 5,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_status.json",
+    "hasErrors": false,
+    "index": 6,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "vehicle_status.json",
+    "hasErrors": false,
+    "index": 7,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_regions.json",
+    "hasErrors": false,
+    "index": 8,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_pricing_plans.json",
+    "hasErrors": false,
+    "index": 9,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_alerts.json",
+    "hasErrors": false,
+    "index": 10,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "geofencing_zones.json",
+    "hasErrors": false,
+    "index": 11,
+    "languages": [],
+    "required": false
+   }
+  ],
+  "summary": {
+   "errorsCount": 1,
+   "hasErrors": true,
+   "version": {
+    "detected": "3.0",
+    "validated": "3.0"
+   },
+   "versionUnimplemented": false
+  }
+ },
+ "v3.0-system-information-data-null": {
+  "files": [
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "gbfs.json",
+    "hasErrors": false,
+    "index": 0,
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "manifest.json",
+    "hasErrors": false,
+    "index": 1,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "gbfs_versions.json",
+    "hasErrors": false,
+    "index": 2,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 5,
+    "exists": true,
+    "file": "system_information.json",
+    "hasErrors": true,
+    "index": 3,
+    "languages": [
+     [
+      "",
+      true,
+      [
+       [
+        "/data",
+        "#/properties/data/oneOf",
+        "oneOf",
+        "{\"passingSchemas\": null}"
+       ],
+       [
+        "/data",
+        "#/properties/data/oneOf/0/not",
+        "not",
+        "{}"
+       ],
+       [
+        "/data",
+        "#/properties/data/oneOf/1/not",
+        "not",
+        "{}"
+       ],
+       [
+        "/data",
+        "#/properties/data/oneOf/2/not",
+        "not",
+        "{}"
+       ],
+       [
+        "/data",
+        "#/properties/data/type",
+        "type",
+        "{\"type\": \"object\"}"
+       ]
+      ]
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "vehicle_types.json",
+    "hasErrors": false,
+    "index": 4,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_information.json",
+    "hasErrors": false,
+    "index": 5,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_status.json",
+    "hasErrors": false,
+    "index": 6,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "vehicle_status.json",
+    "hasErrors": false,
+    "index": 7,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_regions.json",
+    "hasErrors": false,
+    "index": 8,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_pricing_plans.json",
+    "hasErrors": false,
+    "index": 9,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_alerts.json",
+    "hasErrors": false,
+    "index": 10,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "geofencing_zones.json",
+    "hasErrors": false,
+    "index": 11,
+    "languages": [],
+    "required": false
+   }
+  ],
+  "summary": {
+   "errorsCount": 5,
+   "hasErrors": true,
+   "version": {
+    "detected": "3.0",
+    "validated": "3.0"
+   },
+   "versionUnimplemented": false
+  }
+ },
+ "v3.1-RC3-object-reservation-price": {
+  "files": [
+   {
+    "errors": [
+     [
+      "/data/feeds",
+      "#/properties/data/properties/feeds/contains",
+      "contains",
+      "{\"minContains\": 1}"
+     ],
+     [
+      "/data/feeds/0/name",
+      "#/properties/data/properties/feeds/contains/properties/name/const",
+      "const",
+      "{\"allowedValue\": \"system_information\"}"
+     ],
+     [
+      "/data/feeds/1/name",
+      "#/properties/data/properties/feeds/contains/properties/name/const",
+      "const",
+      "{\"allowedValue\": \"system_information\"}"
+     ]
+    ],
+    "errorsCount": 3,
+    "exists": true,
+    "file": "gbfs.json",
+    "hasErrors": true,
+    "index": 0,
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "manifest.json",
+    "hasErrors": false,
+    "index": 1,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "gbfs_versions.json",
+    "hasErrors": false,
+    "index": 2,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 1,
+    "exists": false,
+    "file": "system_information.json",
+    "hasErrors": true,
+    "index": 3,
+    "languages": [],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 1,
+    "exists": true,
+    "file": "vehicle_types.json",
+    "hasErrors": true,
+    "index": 4,
+    "languages": [
+     [
+      "",
+      true,
+      [
+       [
+        "/data/vehicle_types/0",
+        "#/properties/data/properties/vehicle_types/items/allOf/0/then/required",
+        "required",
+        "{\"missingProperty\": \"default_reserve_time\"}"
+       ]
+      ]
+     ]
+    ],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_information.json",
+    "hasErrors": false,
+    "index": 5,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_status.json",
+    "hasErrors": false,
+    "index": 6,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "vehicle_status.json",
+    "hasErrors": false,
+    "index": 7,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "vehicle_availability.json",
+    "hasErrors": false,
+    "index": 8,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_regions.json",
+    "hasErrors": false,
+    "index": 9,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 1,
+    "exists": true,
+    "file": "system_pricing_plans.json",
+    "hasErrors": true,
+    "index": 10,
+    "languages": [
+     [
+      "",
+      true,
+      [
+       [
+        "/data/plans/0/reservation_price_per_min",
+        "#/properties/data/properties/plans/items/properties/reservation_price_per_min/type",
+        "type",
+        "{\"type\": \"number\"}"
+       ]
+      ]
+     ]
+    ],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_alerts.json",
+    "hasErrors": false,
+    "index": 11,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "geofencing_zones.json",
+    "hasErrors": false,
+    "index": 12,
+    "languages": [],
+    "required": false
+   }
+  ],
+  "summary": {
+   "errorsCount": 6,
+   "hasErrors": true,
+   "version": {
+    "detected": "3.1-RC3",
+    "validated": "3.1-RC3"
+   },
+   "versionUnimplemented": false
+  }
+ },
+ "v3.1-RC3-reserve-time": {
+  "files": [
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "gbfs.json",
+    "hasErrors": false,
+    "index": 0,
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "manifest.json",
+    "hasErrors": false,
+    "index": 1,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "gbfs_versions.json",
+    "hasErrors": false,
+    "index": 2,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "system_information.json",
+    "hasErrors": false,
+    "index": 3,
+    "languages": [
+     [
+      "",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 1,
+    "exists": true,
+    "file": "vehicle_types.json",
+    "hasErrors": true,
+    "index": 4,
+    "languages": [
+     [
+      "",
+      true,
+      [
+       [
+        "/data/vehicle_types/0",
+        "#/properties/data/properties/vehicle_types/items/allOf/0/then/required",
+        "required",
+        "{\"missingProperty\": \"default_reserve_time\"}"
+       ]
+      ]
+     ]
+    ],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_information.json",
+    "hasErrors": false,
+    "index": 5,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_status.json",
+    "hasErrors": false,
+    "index": 6,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "vehicle_status.json",
+    "hasErrors": false,
+    "index": 7,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "vehicle_availability.json",
+    "hasErrors": false,
+    "index": 8,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_regions.json",
+    "hasErrors": false,
+    "index": 9,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "system_pricing_plans.json",
+    "hasErrors": false,
+    "index": 10,
+    "languages": [
+     [
+      "",
+      true,
+      []
+     ]
+    ],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_alerts.json",
+    "hasErrors": false,
+    "index": 11,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "geofencing_zones.json",
+    "hasErrors": false,
+    "index": 12,
+    "languages": [],
+    "required": false
+   }
+  ],
+  "summary": {
+   "errorsCount": 1,
+   "hasErrors": true,
+   "version": {
+    "detected": "3.1-RC3",
+    "validated": "3.1-RC3"
+   },
+   "versionUnimplemented": false
+  }
+ },
+ "v3.1-RC3-zero-reservation-price": {
+  "files": [
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "gbfs.json",
+    "hasErrors": false,
+    "index": 0,
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "manifest.json",
+    "hasErrors": false,
+    "index": 1,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "gbfs_versions.json",
+    "hasErrors": false,
+    "index": 2,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "system_information.json",
+    "hasErrors": false,
+    "index": 3,
+    "languages": [
+     [
+      "",
+      true,
+      []
+     ]
+    ],
+    "required": true
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "vehicle_types.json",
+    "hasErrors": false,
+    "index": 4,
+    "languages": [
+     [
+      "",
+      true,
+      []
+     ]
+    ],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_information.json",
+    "hasErrors": false,
+    "index": 5,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "station_status.json",
+    "hasErrors": false,
+    "index": 6,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "vehicle_status.json",
+    "hasErrors": false,
+    "index": 7,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "vehicle_availability.json",
+    "hasErrors": false,
+    "index": 8,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_regions.json",
+    "hasErrors": false,
+    "index": 9,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": true,
+    "file": "system_pricing_plans.json",
+    "hasErrors": false,
+    "index": 10,
+    "languages": [
+     [
+      "",
+      true,
+      []
+     ]
+    ],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "system_alerts.json",
+    "hasErrors": false,
+    "index": 11,
+    "languages": [],
+    "required": false
+   },
+   {
+    "errors": [],
+    "errorsCount": 0,
+    "exists": false,
+    "file": "geofencing_zones.json",
+    "hasErrors": false,
+    "index": 12,
+    "languages": [],
+    "required": false
+   }
+  ],
+  "summary": {
+   "errorsCount": 0,
+   "hasErrors": false,
+   "version": {
+    "detected": "3.1-RC3",
+    "validated": "3.1-RC3"
+   },
+   "versionUnimplemented": false
+  }
+ }
+}

@@ -1,0 +1,4 @@
+{"last_updated": 1566224400, "ttl": 0, "version": "1.0",
+ "data": {"en": {"feeds": [
+   {"name": "system_information", "url": "{BASE}/system_information.json"},
+   {"name": "free_bike_status", "url": "{BASE}/free_bike_status.json"}]}}}

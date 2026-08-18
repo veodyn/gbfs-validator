@@ -1,0 +1,2 @@
+{"last_updated": 1566224400, "ttl": 0, "version": "2.0",
+ "data": {"stations": [{"station_id": "s1", "num_bikes_available": 2, "is_installed": true, "is_renting": true, "is_returning": true, "last_reported": 1566224400}]}}

@@ -1,0 +1,23 @@
+{
+  "last_updated": 1640995200,
+  "ttl": 0,
+  "version": "2.2",
+  "data": {
+    "en": {
+      "feeds": [
+        {
+          "name": "system_information",
+          "url": "{BASE}/system_information.json"
+        }
+      ]
+    },
+    "fr": {
+      "feeds": [
+        {
+          "name": "system_information",
+          "url": "{BASE}/system_information_fr.json"
+        }
+      ]
+    }
+  }
+}

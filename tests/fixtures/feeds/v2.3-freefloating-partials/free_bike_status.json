@@ -1,0 +1,21 @@
+{
+  "last_updated": 1640995200,
+  "ttl": 0,
+  "version": "2.3",
+  "data": {
+    "bikes": [
+      {
+        "bike_id": "b1",
+        "lat": 45.5,
+        "lon": -73.6,
+        "is_reserved": false,
+        "is_disabled": false,
+        "vehicle_type_id": "ebike1",
+        "pricing_plan_id": "plan1",
+        "rental_uris": {
+          "ios": "https://example.com/app/ios"
+        }
+      }
+    ]
+  }
+}

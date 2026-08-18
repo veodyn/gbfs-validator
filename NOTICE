@@ -1,0 +1,31 @@
+gbfs-validator (Python)
+Copyright 2026 the gbfs-validator authors
+
+Released under the MIT License; see LICENSE.
+
+Throughout this file "upstream" means MobilityData's Node gbfs-validator
+(https://github.com/MobilityData/gbfs-validator), and "this project" means the
+Python distribution published as gbfs-validator.
+
+This project is an independent Python implementation of the validation
+behavior defined by upstream. It is not an official MobilityData project, is
+not affiliated with MobilityData, and is not endorsed by them.
+
+Material taken from upstream rather than derived from it. Every entry names
+what came from where, at the pinned commit:
+
+  src/gbfs_validator/data/schemas/
+    The GBFS JSON Schemas, copied verbatim from MobilityData's
+    gbfs-json-schema (https://github.com/MobilityData/gbfs-json-schema),
+    Apache License 2.0, at commit
+    916327fe43ea79683f57c87bc54fdfc24797862f. Reachable through upstream as
+    the versions/gbfs-json-schema submodule.
+
+  src/gbfs_validator/partials.py
+    Ports of the schema-patch generators under versions/partials/ in upstream,
+    at commit b734086ccdf93b5acd72bb349c6fda0c9f64fd39. The upstream package
+    (gbfs-validator/package.json) declares the MIT License; the repository
+    root carries the Apache License 2.0.
+
+The pinned commits are also recorded in src/gbfs_validator/data/PIN, written
+by tools/sync_schemas.py, so an installed copy names its own provenance.

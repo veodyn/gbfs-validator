@@ -1,0 +1,44 @@
+{
+  "uri": {
+    "https://example.com/gbfs.json": true,
+    "http://a.b/c?d=e#f": true,
+    "ftp://x/y": true,
+    "example.com": false,
+    "//nohost": false,
+    "https://": true,
+    "mailto:a@b.c": true,
+    "not a uri": false,
+    "https://example.com/päth": false,
+    "urn:isbn:0451450523": true,
+    "": false
+  },
+  "email": {
+    "a@b.co": true,
+    "first.last+tag@sub.example.com": true,
+    "no-at-sign": false,
+    "a@b": false,
+    "a@-bad.com": false,
+    "a b@c.d": false,
+    "UPPER@CASE.COM": true,
+    "": false
+  },
+  "date": {
+    "20260817": false,
+    "2026-08-17": true,
+    "2026-02-29": false,
+    "2024-02-29": true,
+    "2026-13-01": false,
+    "2026-00-10": false,
+    "2026-1-1": false,
+    "": false
+  },
+  "date-time": {
+    "2019-08-19T10:20:00-04:00": true,
+    "2026-08-17T23:59:60Z": true,
+    "2026-08-17T12:00:00": true,
+    "2026-08-17 12:00:00Z": true,
+    "2026-08-17T12:00:00.123+00:00": true,
+    "2026-08-17T25:00:00Z": false,
+    "": false
+  }
+}

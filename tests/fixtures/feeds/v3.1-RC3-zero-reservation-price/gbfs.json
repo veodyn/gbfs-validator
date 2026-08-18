@@ -1,0 +1,21 @@
+{
+  "last_updated": "2022-01-01T00:00:00Z",
+  "ttl": 0,
+  "version": "3.1-RC3",
+  "data": {
+    "feeds": [
+      {
+        "name": "system_information",
+        "url": "{BASE}/system_information.json"
+      },
+      {
+        "name": "vehicle_types",
+        "url": "{BASE}/vehicle_types.json"
+      },
+      {
+        "name": "system_pricing_plans",
+        "url": "{BASE}/system_pricing_plans.json"
+      }
+    ]
+  }
+}
